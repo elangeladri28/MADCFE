@@ -1,0 +1,25 @@
+C:\Users\adria\source\repos\MADCFE\MADCFE\bin\Debug\MADCFE.exe.config
+C:\Users\adria\source\repos\MADCFE\MADCFE\bin\Debug\MADCFE.exe
+C:\Users\adria\source\repos\MADCFE\MADCFE\bin\Debug\MADCFE.pdb
+C:\Users\adria\source\repos\MADCFE\MADCFE\bin\Debug\MADCFE.xml
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.vbprojAssemblyReference.cache
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.Form1.resources
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.Resources.resources
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.vbproj.GenerateResource.cache
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.vbproj.CoreCompileInputs.cache
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.exe
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.xml
+C:\Users\adria\source\repos\MADCFE\MADCFE\obj\Debug\MADCFE.pdb
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\bin\Debug\MADCFE.exe.config
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\bin\Debug\MADCFE.exe
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\bin\Debug\MADCFE.pdb
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\bin\Debug\MADCFE.xml
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.vbprojAssemblyReference.cache
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.InicioSesion.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.MenuPrincipalEmpleado.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.Resources.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.vbproj.GenerateResource.cache
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.vbproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.exe
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.xml
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.pdb

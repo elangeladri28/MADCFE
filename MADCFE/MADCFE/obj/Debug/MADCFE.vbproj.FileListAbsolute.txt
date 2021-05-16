@@ -23,3 +23,8 @@ C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MAD
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.exe
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.xml
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.pdb
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.ConsultarRecibo.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.PagarRecibo.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.AdministrarClientes.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.Recibos.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.ReporteGeneral.resources

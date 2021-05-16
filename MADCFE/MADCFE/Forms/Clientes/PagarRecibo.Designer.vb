@@ -23,20 +23,21 @@ Partial Class PagarRecibo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxPagarRecibo_TipoTarjeta = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxPagarRecibo_Numeracion = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBoxPagarRecibo_Mes = New System.Windows.Forms.TextBox()
+        Me.TextBoxPagarRecibo_Year = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBoxPagarRecibo_CVV = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonPagarRecibo_Generar = New System.Windows.Forms.Button()
+        Me.ButtonPagarRecibo_Pagar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -51,16 +52,15 @@ Partial Class PagarRecibo
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Tipo de Tarjeta"
         '
-        'ComboBox2
+        'ComboBoxPagarRecibo_TipoTarjeta
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.Enabled = False
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Visa", "MasterCard"})
-        Me.ComboBox2.Location = New System.Drawing.Point(23, 89)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(255, 33)
-        Me.ComboBox2.TabIndex = 3
+        Me.ComboBoxPagarRecibo_TipoTarjeta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBoxPagarRecibo_TipoTarjeta.FormattingEnabled = True
+        Me.ComboBoxPagarRecibo_TipoTarjeta.Items.AddRange(New Object() {"Visa", "MasterCard"})
+        Me.ComboBoxPagarRecibo_TipoTarjeta.Location = New System.Drawing.Point(23, 89)
+        Me.ComboBoxPagarRecibo_TipoTarjeta.Name = "ComboBoxPagarRecibo_TipoTarjeta"
+        Me.ComboBoxPagarRecibo_TipoTarjeta.Size = New System.Drawing.Size(255, 33)
+        Me.ComboBoxPagarRecibo_TipoTarjeta.TabIndex = 3
         '
         'Label3
         '
@@ -72,13 +72,14 @@ Partial Class PagarRecibo
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Ingresa los datos de tu Tarjeta"
         '
-        'TextBox1
+        'TextBoxPagarRecibo_Numeracion
         '
-        Me.TextBox1.Location = New System.Drawing.Point(23, 224)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(257, 30)
-        Me.TextBox1.TabIndex = 5
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBoxPagarRecibo_Numeracion.Enabled = False
+        Me.TextBoxPagarRecibo_Numeracion.Location = New System.Drawing.Point(23, 224)
+        Me.TextBoxPagarRecibo_Numeracion.Name = "TextBoxPagarRecibo_Numeracion"
+        Me.TextBoxPagarRecibo_Numeracion.Size = New System.Drawing.Size(257, 30)
+        Me.TextBoxPagarRecibo_Numeracion.TabIndex = 5
+        Me.TextBoxPagarRecibo_Numeracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
@@ -100,21 +101,23 @@ Partial Class PagarRecibo
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Fecha de Caducidad"
         '
-        'TextBox2
+        'TextBoxPagarRecibo_Mes
         '
-        Me.TextBox2.Location = New System.Drawing.Point(23, 301)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(44, 30)
-        Me.TextBox2.TabIndex = 7
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBoxPagarRecibo_Mes.Enabled = False
+        Me.TextBoxPagarRecibo_Mes.Location = New System.Drawing.Point(23, 301)
+        Me.TextBoxPagarRecibo_Mes.Name = "TextBoxPagarRecibo_Mes"
+        Me.TextBoxPagarRecibo_Mes.Size = New System.Drawing.Size(44, 30)
+        Me.TextBoxPagarRecibo_Mes.TabIndex = 7
+        Me.TextBoxPagarRecibo_Mes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox3
+        'TextBoxPagarRecibo_Year
         '
-        Me.TextBox3.Location = New System.Drawing.Point(114, 301)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(44, 30)
-        Me.TextBox3.TabIndex = 9
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBoxPagarRecibo_Year.Enabled = False
+        Me.TextBoxPagarRecibo_Year.Location = New System.Drawing.Point(114, 301)
+        Me.TextBoxPagarRecibo_Year.Name = "TextBoxPagarRecibo_Year"
+        Me.TextBoxPagarRecibo_Year.Size = New System.Drawing.Size(44, 30)
+        Me.TextBoxPagarRecibo_Year.TabIndex = 9
+        Me.TextBoxPagarRecibo_Year.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label6
         '
@@ -126,13 +129,14 @@ Partial Class PagarRecibo
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "/"
         '
-        'TextBox4
+        'TextBoxPagarRecibo_CVV
         '
-        Me.TextBox4.Location = New System.Drawing.Point(24, 367)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(44, 30)
-        Me.TextBox4.TabIndex = 11
-        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBoxPagarRecibo_CVV.Enabled = False
+        Me.TextBoxPagarRecibo_CVV.Location = New System.Drawing.Point(24, 367)
+        Me.TextBoxPagarRecibo_CVV.Name = "TextBoxPagarRecibo_CVV"
+        Me.TextBoxPagarRecibo_CVV.Size = New System.Drawing.Size(44, 30)
+        Me.TextBoxPagarRecibo_CVV.TabIndex = 11
+        Me.TextBoxPagarRecibo_CVV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -146,33 +150,34 @@ Partial Class PagarRecibo
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ButtonPagarRecibo_Pagar)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.TextBoxPagarRecibo_CVV)
+        Me.GroupBox1.Controls.Add(Me.ComboBoxPagarRecibo_TipoTarjeta)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.TextBoxPagarRecibo_Year)
+        Me.GroupBox1.Controls.Add(Me.TextBoxPagarRecibo_Numeracion)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.TextBoxPagarRecibo_Mes)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(76, 30)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(335, 421)
+        Me.GroupBox1.Size = New System.Drawing.Size(336, 500)
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Pagos en Tarjeta"
+        Me.GroupBox1.Text = "Pago con Tarjeta"
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.ButtonPagarRecibo_Generar)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(580, 30)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(354, 421)
+        Me.GroupBox2.Size = New System.Drawing.Size(354, 500)
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Pago en Efectivo"
@@ -181,22 +186,34 @@ Partial Class PagarRecibo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 50)
+        Me.Label1.Location = New System.Drawing.Point(10, 50)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(333, 125)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Los pagos en efectivo se realizan en " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "cualquier tienda de auto-servicio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(OXXO o" &
-    " Seven)," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "generaras la referencia y pagaras " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "directo en la tienda."
+    " Seven), en este momento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "generaras la referencia y pagaras " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "directo en la tien" &
+    "da."
         '
-        'Button1
+        'ButtonPagarRecibo_Generar
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(57, 237)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(235, 80)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "GENERAR"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonPagarRecibo_Generar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPagarRecibo_Generar.Location = New System.Drawing.Point(63, 328)
+        Me.ButtonPagarRecibo_Generar.Name = "ButtonPagarRecibo_Generar"
+        Me.ButtonPagarRecibo_Generar.Size = New System.Drawing.Size(235, 80)
+        Me.ButtonPagarRecibo_Generar.TabIndex = 20
+        Me.ButtonPagarRecibo_Generar.Text = "GENERAR"
+        Me.ButtonPagarRecibo_Generar.UseVisualStyleBackColor = True
+        '
+        'ButtonPagarRecibo_Pagar
+        '
+        Me.ButtonPagarRecibo_Pagar.Enabled = False
+        Me.ButtonPagarRecibo_Pagar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPagarRecibo_Pagar.Location = New System.Drawing.Point(70, 419)
+        Me.ButtonPagarRecibo_Pagar.Name = "ButtonPagarRecibo_Pagar"
+        Me.ButtonPagarRecibo_Pagar.Size = New System.Drawing.Size(192, 69)
+        Me.ButtonPagarRecibo_Pagar.TabIndex = 12
+        Me.ButtonPagarRecibo_Pagar.Text = "PAGAR"
+        Me.ButtonPagarRecibo_Pagar.UseVisualStyleBackColor = True
         '
         'PagarRecibo
         '
@@ -216,18 +233,19 @@ Partial Class PagarRecibo
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBoxPagarRecibo_TipoTarjeta As ComboBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBoxPagarRecibo_Numeracion As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBoxPagarRecibo_Mes As TextBox
+    Friend WithEvents TextBoxPagarRecibo_Year As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBoxPagarRecibo_CVV As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonPagarRecibo_Generar As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents ButtonPagarRecibo_Pagar As Button
 End Class

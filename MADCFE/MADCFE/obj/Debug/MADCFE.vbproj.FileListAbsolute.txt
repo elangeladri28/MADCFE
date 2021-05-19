@@ -28,3 +28,24 @@ C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MAD
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.AdministrarClientes.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.Recibos.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.ReporteGeneral.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.vbprojAssemblyReference.cache
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.ConsultarRecibo.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.PagarRecibo.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.InicioSesion.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.MenuPrincipalEmpleado.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Resources.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Recibos.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.ReporteGeneral.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.vbproj.GenerateResource.cache
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.vbproj.CoreCompileInputs.cache
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.exe
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.xml
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.pdb
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\bin\Debug\MADCFE.exe.config
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\bin\Debug\MADCFE.exe
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\bin\Debug\MADCFE.pdb
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\bin\Debug\MADCFE.xml
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Usuarios.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Consumos.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Domicilios.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Medidores.resources

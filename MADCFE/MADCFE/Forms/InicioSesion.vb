@@ -1,4 +1,7 @@
-﻿Public Class InicioSesion
+﻿Imports MADCFE.Globals
+
+Public Class InicioSesion
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub

@@ -4,9 +4,16 @@
     End Sub
 
     Private Sub AdministrarClientesToolStripMenuItem_MenuEmpleado_Click(sender As Object, e As EventArgs) Handles AdministrarClientesToolStripMenuItem_MenuEmpleado.Click
-        Dim AdminClientes As New AdministrarClientes()
+        Dim AdminClientes As New Usuarios()
 
         AdminClientes.ShowDialog()
 
+    End Sub
+
+    Private Sub AdministrarUsuarios_MenuEmpleado_Click(sender As Object, e As EventArgs) Handles AdministrarUsuarios_MenuEmpleado.Click
+
+    End Sub
+
+    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
     End Sub
 End Class

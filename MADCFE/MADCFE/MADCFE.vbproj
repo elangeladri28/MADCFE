@@ -11,9 +11,10 @@
     <AssemblyName>MADCFE</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -73,6 +75,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Globals.vb" />
+    <Compile Include="Clases\SQL_Connection.vb" />
+    <Compile Include="Clases\Usuarios_Querys.vb" />
     <Compile Include="Forms\Clientes\ConsultarRecibo.Designer.vb">
       <DependentUpon>ConsultarRecibo.vb</DependentUpon>
     </Compile>
@@ -85,10 +90,28 @@
     <Compile Include="Forms\Clientes\PagarRecibo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Empleados\AdministrarClientes.Designer.vb">
-      <DependentUpon>AdministrarClientes.vb</DependentUpon>
+    <Compile Include="Forms\Empleados\Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Empleados\AdministrarClientes.vb">
+    <Compile Include="Forms\Empleados\Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Consumos.Designer.vb">
+      <DependentUpon>Consumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Consumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Domicilios.Designer.vb">
+      <DependentUpon>Domicilios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Domicilios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Medidores.Designer.vb">
+      <DependentUpon>Medidores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Medidores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\InicioSesion.vb">
@@ -139,8 +162,17 @@
     <EmbeddedResource Include="Forms\Clientes\PagarRecibo.resx">
       <DependentUpon>PagarRecibo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Empleados\AdministrarClientes.resx">
-      <DependentUpon>AdministrarClientes.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Empleados\Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Consumos.resx">
+      <DependentUpon>Consumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Domicilios.resx">
+      <DependentUpon>Domicilios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Medidores.resx">
+      <DependentUpon>Medidores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InicioSesion.resx">
       <DependentUpon>InicioSesion.vb</DependentUpon>
@@ -176,8 +208,6 @@
   <ItemGroup>
     <None Include="Resources\CFE-removebg-preview.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

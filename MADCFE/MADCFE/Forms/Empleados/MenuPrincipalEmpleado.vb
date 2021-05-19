@@ -16,4 +16,11 @@
 
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
     End Sub
+
+    Private Sub Tarifas_Cargas_MenuEmpleado_Click(sender As Object, e As EventArgs) Handles Tarifas_Cargas_MenuEmpleado.Click
+        Dim Tarifas As New Tarifas()
+
+        Tarifas.ShowDialog()
+
+    End Sub
 End Class

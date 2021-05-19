@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Clases\Globals.vb" />
     <Compile Include="Clases\SQL_Connection.vb" />
+    <Compile Include="Clases\Tarifas_Querys.vb" />
     <Compile Include="Clases\Usuarios_Querys.vb" />
     <Compile Include="Forms\Clientes\ConsultarRecibo.Designer.vb">
       <DependentUpon>ConsultarRecibo.vb</DependentUpon>
@@ -88,6 +89,12 @@
       <DependentUpon>PagarRecibo.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clientes\PagarRecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Tarifas.Designer.vb">
+      <DependentUpon>Tarifas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Tarifas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Empleados\Usuarios.Designer.vb">
@@ -161,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\PagarRecibo.resx">
       <DependentUpon>PagarRecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Tarifas.resx">
+      <DependentUpon>Tarifas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Empleados\Usuarios.resx">
       <DependentUpon>Usuarios.vb</DependentUpon>

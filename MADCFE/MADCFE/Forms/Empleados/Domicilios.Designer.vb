@@ -36,6 +36,9 @@ Partial Class Domicilios
         Me.btnDomicilios_Editar = New System.Windows.Forms.Button()
         Me.btnDomicilios_Eliminar = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblDomicilios_idClient = New System.Windows.Forms.Label()
+        Me.chbDomicilios_Activo = New System.Windows.Forms.CheckBox()
+        Me.lblDomicilios_idDomicilio = New System.Windows.Forms.Label()
         CType(Me.dgvDomicilios_Clientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvDomicilios_Domicilios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,6 +50,7 @@ Partial Class Domicilios
         Me.dgvDomicilios_Clientes.Name = "dgvDomicilios_Clientes"
         Me.dgvDomicilios_Clientes.Size = New System.Drawing.Size(555, 272)
         Me.dgvDomicilios_Clientes.TabIndex = 0
+        Me.dgvDomicilios_Clientes.TabStop = False
         '
         'Label1
         '
@@ -61,13 +65,13 @@ Partial Class Domicilios
         '
         Me.txtDomicilios_Direccion.Location = New System.Drawing.Point(15, 326)
         Me.txtDomicilios_Direccion.Name = "txtDomicilios_Direccion"
-        Me.txtDomicilios_Direccion.Size = New System.Drawing.Size(174, 20)
+        Me.txtDomicilios_Direccion.Size = New System.Drawing.Size(222, 20)
         Me.txtDomicilios_Direccion.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(192, 310)
+        Me.Label2.Location = New System.Drawing.Point(240, 310)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 13)
         Me.Label2.TabIndex = 3
@@ -75,15 +79,15 @@ Partial Class Domicilios
         '
         'txtDomicilios_Ciudad
         '
-        Me.txtDomicilios_Ciudad.Location = New System.Drawing.Point(195, 326)
+        Me.txtDomicilios_Ciudad.Location = New System.Drawing.Point(243, 326)
         Me.txtDomicilios_Ciudad.Name = "txtDomicilios_Ciudad"
-        Me.txtDomicilios_Ciudad.Size = New System.Drawing.Size(128, 20)
+        Me.txtDomicilios_Ciudad.Size = New System.Drawing.Size(145, 20)
         Me.txtDomicilios_Ciudad.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(326, 310)
+        Me.Label3.Location = New System.Drawing.Point(391, 310)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(43, 13)
         Me.Label3.TabIndex = 5
@@ -91,15 +95,15 @@ Partial Class Domicilios
         '
         'txtDomicilios_Estado
         '
-        Me.txtDomicilios_Estado.Location = New System.Drawing.Point(329, 326)
+        Me.txtDomicilios_Estado.Location = New System.Drawing.Point(394, 326)
         Me.txtDomicilios_Estado.Name = "txtDomicilios_Estado"
-        Me.txtDomicilios_Estado.Size = New System.Drawing.Size(127, 20)
+        Me.txtDomicilios_Estado.Size = New System.Drawing.Size(148, 20)
         Me.txtDomicilios_Estado.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(462, 310)
+        Me.Label4.Location = New System.Drawing.Point(15, 360)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(24, 13)
         Me.Label4.TabIndex = 7
@@ -107,7 +111,7 @@ Partial Class Domicilios
         '
         'txtDomicilios_CodigoPostal
         '
-        Me.txtDomicilios_CodigoPostal.Location = New System.Drawing.Point(462, 326)
+        Me.txtDomicilios_CodigoPostal.Location = New System.Drawing.Point(15, 376)
         Me.txtDomicilios_CodigoPostal.Name = "txtDomicilios_CodigoPostal"
         Me.txtDomicilios_CodigoPostal.Size = New System.Drawing.Size(105, 20)
         Me.txtDomicilios_CodigoPostal.TabIndex = 8
@@ -115,14 +119,15 @@ Partial Class Domicilios
         'dgvDomicilios_Domicilios
         '
         Me.dgvDomicilios_Domicilios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDomicilios_Domicilios.Location = New System.Drawing.Point(12, 352)
+        Me.dgvDomicilios_Domicilios.Location = New System.Drawing.Point(12, 413)
         Me.dgvDomicilios_Domicilios.Name = "dgvDomicilios_Domicilios"
-        Me.dgvDomicilios_Domicilios.Size = New System.Drawing.Size(555, 177)
+        Me.dgvDomicilios_Domicilios.Size = New System.Drawing.Size(555, 195)
         Me.dgvDomicilios_Domicilios.TabIndex = 9
+        Me.dgvDomicilios_Domicilios.TabStop = False
         '
         'btnDomicilios_Insertar
         '
-        Me.btnDomicilios_Insertar.Location = New System.Drawing.Point(15, 547)
+        Me.btnDomicilios_Insertar.Location = New System.Drawing.Point(269, 371)
         Me.btnDomicilios_Insertar.Name = "btnDomicilios_Insertar"
         Me.btnDomicilios_Insertar.Size = New System.Drawing.Size(75, 23)
         Me.btnDomicilios_Insertar.TabIndex = 10
@@ -131,7 +136,7 @@ Partial Class Domicilios
         '
         'btnDomicilios_Editar
         '
-        Me.btnDomicilios_Editar.Location = New System.Drawing.Point(114, 547)
+        Me.btnDomicilios_Editar.Location = New System.Drawing.Point(368, 371)
         Me.btnDomicilios_Editar.Name = "btnDomicilios_Editar"
         Me.btnDomicilios_Editar.Size = New System.Drawing.Size(75, 23)
         Me.btnDomicilios_Editar.TabIndex = 11
@@ -140,7 +145,7 @@ Partial Class Domicilios
         '
         'btnDomicilios_Eliminar
         '
-        Me.btnDomicilios_Eliminar.Location = New System.Drawing.Point(213, 547)
+        Me.btnDomicilios_Eliminar.Location = New System.Drawing.Point(467, 371)
         Me.btnDomicilios_Eliminar.Name = "btnDomicilios_Eliminar"
         Me.btnDomicilios_Eliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnDomicilios_Eliminar.TabIndex = 12
@@ -156,11 +161,44 @@ Partial Class Domicilios
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Seleccione un cliente:"
         '
+        'lblDomicilios_idClient
+        '
+        Me.lblDomicilios_idClient.AutoSize = True
+        Me.lblDomicilios_idClient.Location = New System.Drawing.Point(326, 10)
+        Me.lblDomicilios_idClient.Name = "lblDomicilios_idClient"
+        Me.lblDomicilios_idClient.Size = New System.Drawing.Size(112, 13)
+        Me.lblDomicilios_idClient.TabIndex = 14
+        Me.lblDomicilios_idClient.Text = "Seleccione un cliente:"
+        Me.lblDomicilios_idClient.Visible = False
+        '
+        'chbDomicilios_Activo
+        '
+        Me.chbDomicilios_Activo.AutoSize = True
+        Me.chbDomicilios_Activo.Location = New System.Drawing.Point(148, 375)
+        Me.chbDomicilios_Activo.Name = "chbDomicilios_Activo"
+        Me.chbDomicilios_Activo.Size = New System.Drawing.Size(56, 17)
+        Me.chbDomicilios_Activo.TabIndex = 15
+        Me.chbDomicilios_Activo.Text = "Activo"
+        Me.chbDomicilios_Activo.UseVisualStyleBackColor = True
+        '
+        'lblDomicilios_idDomicilio
+        '
+        Me.lblDomicilios_idDomicilio.AutoSize = True
+        Me.lblDomicilios_idDomicilio.Location = New System.Drawing.Point(486, 310)
+        Me.lblDomicilios_idDomicilio.Name = "lblDomicilios_idDomicilio"
+        Me.lblDomicilios_idDomicilio.Size = New System.Drawing.Size(39, 13)
+        Me.lblDomicilios_idDomicilio.TabIndex = 16
+        Me.lblDomicilios_idDomicilio.Text = "Label6"
+        Me.lblDomicilios_idDomicilio.Visible = False
+        '
         'Domicilios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(583, 585)
+        Me.ClientSize = New System.Drawing.Size(577, 620)
+        Me.Controls.Add(Me.lblDomicilios_idDomicilio)
+        Me.Controls.Add(Me.chbDomicilios_Activo)
+        Me.Controls.Add(Me.lblDomicilios_idClient)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnDomicilios_Eliminar)
         Me.Controls.Add(Me.btnDomicilios_Editar)
@@ -198,4 +236,7 @@ Partial Class Domicilios
     Friend WithEvents btnDomicilios_Editar As Button
     Friend WithEvents btnDomicilios_Eliminar As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents lblDomicilios_idClient As Label
+    Friend WithEvents chbDomicilios_Activo As CheckBox
+    Friend WithEvents lblDomicilios_idDomicilio As Label
 End Class

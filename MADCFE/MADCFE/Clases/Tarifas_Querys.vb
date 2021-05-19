@@ -21,12 +21,12 @@ Public Class Tarifas_Querys
         End Try
     End Function
 
-    Public Function InsertRate(rateName As String, rateType As String, baseRate As String, intermediateRate As String, excedentRate As String, active As Boolean, fecha As String)
+    Public Function InsertRate(rateName As String, rateType As String, baseRate As String, intermediateRate As String, excedentRate As String, active As Boolean, fecha As Date, user As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
 
-            Dim query As String = "EXEC InsertRate '" + rateName + "','" + rateType + "'," + baseRate + "," + intermediateRate + "," + excedentRate + ",'" + active + "','" + fecha + "';"
+            Dim query As String = "EXEC InsertRate '" + rateName + "','" + rateType + "'," + baseRate + "," + intermediateRate + "," + excedentRate + ",'" + active.ToString() + "','" + fecha.ToString() + "', '" + user + "';"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "rates")
@@ -39,13 +39,13 @@ Public Class Tarifas_Querys
     End Function
 
     Public Function UpdateRate(id As String, rateName As String, rateType As String, baseRate As Decimal,
-                               intermediateRate As Decimal, excedentRate As Decimal, active As Boolean, fecha As String)
+                               intermediateRate As Decimal, excedentRate As Decimal, active As Boolean, fecha As String, user As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
 
-            Dim var() As String = {id, rateName, rateType, baseRate, intermediateRate, excedentRate, active, fecha}
-            Dim query As String = String.Format("EXEC UpdateRate {0}, '{1}', '{2}', {3}, {4}, {5}, {6}, '{7}';", var)
+            Dim var() As String = {id, rateName, rateType, baseRate, intermediateRate, excedentRate, active, fecha, user}
+            Dim query As String = String.Format("EXEC UpdateRate {0}, '{1}', '{2}', {3}, {4}, {5}, {6}, '{7}', '{8}';", var)
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "rates")

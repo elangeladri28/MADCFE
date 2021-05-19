@@ -1,18 +1,18 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class Usuarios_Querys
+Public Class Domicilios_Querys
     Dim dataadapter As New SqlDataAdapter()
     Dim ds As New DataSet()
 
-    Public Function SelectAllFromUsuarios()
+    Public Function SelectAllFromDomicilios()
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
 
-            Dim query As String = "EXEC SelectAllFromUsers;"
+            Dim query As String = "EXEC SelectAllFromLocations"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
-            dataadapter.Fill(ds, "users")
+            dataadapter.Fill(ds, "locations")
             conn.DisconnectSQL()
             Return ds
         Catch ex As Exception
@@ -21,15 +21,15 @@ Public Class Usuarios_Querys
         End Try
     End Function
 
-    Public Function InsertUsuario(username As String, userPassword As String, userType As String, fullname As String, curp As String, rfc As String, birthday As Date, gender As String, user As String)
+    Public Function SelectAllClientLocations(id As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
-            Dim query As String = "EXEC InsertUser '" + username + "', '" + userPassword + "', '" + userType + "', '" + fullname + "', '" +
-                curp + "', '" + rfc + "', '" + birthday + "', '" + gender + "', 0, '" + user + "';"
+
+            Dim query As String = "EXEC SelectAllClientLocations " + id + ";"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
-            dataadapter.Fill(ds, "users")
+            dataadapter.Fill(ds, "locations")
             conn.DisconnectSQL()
             Return ds
         Catch ex As Exception
@@ -38,16 +38,16 @@ Public Class Usuarios_Querys
         End Try
     End Function
 
-    Public Function UpdateUsuario(id As String, username As String, userPassword As String, userType As String, fullname As String, curp As String, rfc As String, birthday As Date, gender As String,
-                                  tried As Integer, modifiedBy As String, blocked As Boolean, active As Boolean)
+    Public Function InsertLocation(id As String, address As String, city As String, region As String, pc As String, user As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
-            Dim var() As String = {id, username, userPassword, userType, fullname, curp, rfc, birthday, gender, tried, modifiedBy, blocked, active}
-            Dim query As String = String.Format("EXEC UpdateUser {0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', {9}, '{10}', {11}, {12};", var)
+
+            Dim var() = {id, address, city, region, pc, user}
+            Dim query As String = String.Format("EXEC InsertLocation {0}, '{1}', '{2}', '{3}', '{4}', '{5}';", var)
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
-            dataadapter.Fill(ds, "users")
+            dataadapter.Fill(ds, "locations")
             conn.DisconnectSQL()
             Return ds
         Catch ex As Exception
@@ -56,14 +56,16 @@ Public Class Usuarios_Querys
         End Try
     End Function
 
-    Public Function DeleteUsuario(id As String)
+    Public Function UpdateLocation(id As String, address As String, city As String, region As String, pc As String, active As Boolean, user As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
-            Dim query As String = "EXEC DeleteUser " + id + ";"
+
+            Dim var() = {id, address, city, region, pc, active, user}
+            Dim query As String = String.Format("EXEC UpdateLocation {0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}';", var)
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
-            dataadapter.Fill(ds, "users")
+            dataadapter.Fill(ds, "locations")
             conn.DisconnectSQL()
             Return ds
         Catch ex As Exception
@@ -72,15 +74,15 @@ Public Class Usuarios_Querys
         End Try
     End Function
 
-    Public Function SelectAllClientsFromUsuarios()
+    Public Function DeleteLocation(id As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
 
-            Dim query As String = "EXEC SelectAllClientsFromUsers;"
+            Dim query As String = "EXEC DeleteLocation " + id + ";"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
-            dataadapter.Fill(ds, "users")
+            dataadapter.Fill(ds, "locations")
             conn.DisconnectSQL()
             Return ds
         Catch ex As Exception

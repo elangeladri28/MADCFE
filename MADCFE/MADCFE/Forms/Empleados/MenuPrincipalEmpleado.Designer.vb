@@ -36,6 +36,7 @@ Partial Class MenuPrincipalEmpleado
         Me.GeneraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Recibos_Generacion_MenuEmpleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.Reportes_Generacion_MenuEmpleado = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DomiciliosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip_MenuEmpleado.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,103 +46,109 @@ Partial Class MenuPrincipalEmpleado
         Me.MenuStrip_MenuEmpleado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.CLIENTESToolStripMenuItem, Me.SERVICIOSToolStripMenuItem})
         Me.MenuStrip_MenuEmpleado.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip_MenuEmpleado.Name = "MenuStrip_MenuEmpleado"
-        Me.MenuStrip_MenuEmpleado.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip_MenuEmpleado.Size = New System.Drawing.Size(837, 28)
+        Me.MenuStrip_MenuEmpleado.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip_MenuEmpleado.Size = New System.Drawing.Size(628, 24)
         Me.MenuStrip_MenuEmpleado.TabIndex = 0
         Me.MenuStrip_MenuEmpleado.Text = "MenuStrip1"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(14, 24)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 20)
         '
         'CLIENTESToolStripMenuItem
         '
         Me.CLIENTESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarClientesToolStripMenuItem_MenuEmpleado, Me.Contratos_MenuEmpleado, Me.UsuariosToolStripMenuItem})
         Me.CLIENTESToolStripMenuItem.Name = "CLIENTESToolStripMenuItem"
-        Me.CLIENTESToolStripMenuItem.Size = New System.Drawing.Size(86, 24)
+        Me.CLIENTESToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
         Me.CLIENTESToolStripMenuItem.Text = "CLIENTES"
         '
         'AdministrarClientesToolStripMenuItem_MenuEmpleado
         '
         Me.AdministrarClientesToolStripMenuItem_MenuEmpleado.Name = "AdministrarClientesToolStripMenuItem_MenuEmpleado"
-        Me.AdministrarClientesToolStripMenuItem_MenuEmpleado.Size = New System.Drawing.Size(225, 26)
+        Me.AdministrarClientesToolStripMenuItem_MenuEmpleado.Size = New System.Drawing.Size(181, 22)
         Me.AdministrarClientesToolStripMenuItem_MenuEmpleado.Text = "Administrar Clientes"
         '
         'Contratos_MenuEmpleado
         '
         Me.Contratos_MenuEmpleado.Name = "Contratos_MenuEmpleado"
-        Me.Contratos_MenuEmpleado.Size = New System.Drawing.Size(225, 26)
+        Me.Contratos_MenuEmpleado.Size = New System.Drawing.Size(181, 22)
         Me.Contratos_MenuEmpleado.Text = "Contratos"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'SERVICIOSToolStripMenuItem
         '
         Me.SERVICIOSToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarUsuarios_MenuEmpleado, Me.CargasToolStripMenuItem, Me.GeneraciónToolStripMenuItem})
         Me.SERVICIOSToolStripMenuItem.Name = "SERVICIOSToolStripMenuItem"
-        Me.SERVICIOSToolStripMenuItem.Size = New System.Drawing.Size(120, 24)
+        Me.SERVICIOSToolStripMenuItem.Size = New System.Drawing.Size(97, 20)
         Me.SERVICIOSToolStripMenuItem.Text = "OPERACIONES"
         '
         'AdministrarUsuarios_MenuEmpleado
         '
         Me.AdministrarUsuarios_MenuEmpleado.Name = "AdministrarUsuarios_MenuEmpleado"
-        Me.AdministrarUsuarios_MenuEmpleado.Size = New System.Drawing.Size(229, 26)
+        Me.AdministrarUsuarios_MenuEmpleado.Size = New System.Drawing.Size(184, 22)
         Me.AdministrarUsuarios_MenuEmpleado.Text = "Administrar Usuarios"
         '
         'CargasToolStripMenuItem
         '
-        Me.CargasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tarifas_Cargas_MenuEmpleado, Me.Consumos_Cargas_MenuPrincipal})
+        Me.CargasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tarifas_Cargas_MenuEmpleado, Me.Consumos_Cargas_MenuPrincipal, Me.DomiciliosToolStripMenuItem})
         Me.CargasToolStripMenuItem.Name = "CargasToolStripMenuItem"
-        Me.CargasToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.CargasToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.CargasToolStripMenuItem.Text = "Cargas"
         '
         'Tarifas_Cargas_MenuEmpleado
         '
         Me.Tarifas_Cargas_MenuEmpleado.Name = "Tarifas_Cargas_MenuEmpleado"
-        Me.Tarifas_Cargas_MenuEmpleado.Size = New System.Drawing.Size(224, 26)
+        Me.Tarifas_Cargas_MenuEmpleado.Size = New System.Drawing.Size(180, 22)
         Me.Tarifas_Cargas_MenuEmpleado.Text = "Tarifas"
         '
         'Consumos_Cargas_MenuPrincipal
         '
         Me.Consumos_Cargas_MenuPrincipal.Name = "Consumos_Cargas_MenuPrincipal"
-        Me.Consumos_Cargas_MenuPrincipal.Size = New System.Drawing.Size(224, 26)
+        Me.Consumos_Cargas_MenuPrincipal.Size = New System.Drawing.Size(180, 22)
         Me.Consumos_Cargas_MenuPrincipal.Text = "Consumos"
         '
         'GeneraciónToolStripMenuItem
         '
         Me.GeneraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Recibos_Generacion_MenuEmpleado, Me.Reportes_Generacion_MenuEmpleado})
         Me.GeneraciónToolStripMenuItem.Name = "GeneraciónToolStripMenuItem"
-        Me.GeneraciónToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.GeneraciónToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.GeneraciónToolStripMenuItem.Text = "Generación"
         '
         'Recibos_Generacion_MenuEmpleado
         '
         Me.Recibos_Generacion_MenuEmpleado.Name = "Recibos_Generacion_MenuEmpleado"
-        Me.Recibos_Generacion_MenuEmpleado.Size = New System.Drawing.Size(224, 26)
+        Me.Recibos_Generacion_MenuEmpleado.Size = New System.Drawing.Size(120, 22)
         Me.Recibos_Generacion_MenuEmpleado.Text = "Recibos"
         '
         'Reportes_Generacion_MenuEmpleado
         '
         Me.Reportes_Generacion_MenuEmpleado.Name = "Reportes_Generacion_MenuEmpleado"
-        Me.Reportes_Generacion_MenuEmpleado.Size = New System.Drawing.Size(224, 26)
+        Me.Reportes_Generacion_MenuEmpleado.Size = New System.Drawing.Size(120, 22)
         Me.Reportes_Generacion_MenuEmpleado.Text = "Reportes"
+        '
+        'DomiciliosToolStripMenuItem
+        '
+        Me.DomiciliosToolStripMenuItem.Name = "DomiciliosToolStripMenuItem"
+        Me.DomiciliosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DomiciliosToolStripMenuItem.Text = "Domicilios"
         '
         'MenuPrincipalEmpleado
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MADCFE.My.Resources.Resources.CFE_removebg_preview
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(837, 539)
+        Me.ClientSize = New System.Drawing.Size(628, 438)
         Me.Controls.Add(Me.MenuStrip_MenuEmpleado)
         Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.MenuStrip_MenuEmpleado
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MenuPrincipalEmpleado"
         Me.Text = "Menu Principal Empleado"
         Me.MenuStrip_MenuEmpleado.ResumeLayout(False)
@@ -165,4 +172,5 @@ Partial Class MenuPrincipalEmpleado
     Friend WithEvents Reportes_Generacion_MenuEmpleado As ToolStripMenuItem
     Friend WithEvents AdministrarUsuarios_MenuEmpleado As ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DomiciliosToolStripMenuItem As ToolStripMenuItem
 End Class

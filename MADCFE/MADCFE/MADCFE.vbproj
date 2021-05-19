@@ -75,6 +75,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Domicilios_Querys.vb" />
     <Compile Include="Clases\Globals.vb" />
     <Compile Include="Clases\SQL_Connection.vb" />
     <Compile Include="Clases\Tarifas_Querys.vb" />

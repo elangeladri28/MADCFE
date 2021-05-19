@@ -23,4 +23,9 @@
         Tarifas.ShowDialog()
 
     End Sub
+
+    Private Sub DomiciliosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DomiciliosToolStripMenuItem.Click
+        Dim domicilios As New Domicilios()
+        domicilios.ShowDialog()
+    End Sub
 End Class

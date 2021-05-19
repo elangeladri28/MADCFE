@@ -7,7 +7,7 @@
 
     Private Sub btnTarifas_Insertar_Click(sender As Object, e As EventArgs) Handles btnTarifas_Insertar.Click
         Dim RateName As String = txtTarifas_Nombre.Text
-        Dim RateType As String = cbTarifas_Tipo.Text
+        Dim RateType As String = cbTarifas_Tipo.SelectedItem.ToString()
         Dim BaseRate As String = txtTarifas_Base.Text
         Dim IntermediateRate As String = txtTarifas_Intermedia.Text
         Dim ExcedentRate As String = txtTarifas_Excedente.Text
@@ -15,7 +15,7 @@
         Dim Fecha As Date = dtpTarifas_Fecha.Value
 
         Dim qry As New Tarifas_Querys()
-        qry.InsertRate(RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha)
+        qry.InsertRate(RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha, Globals.username)
         dgvTarifas.DataSource = qry.SelectAllFromRates()
         dgvTarifas.DataMember = "rates"
 
@@ -24,7 +24,7 @@
     Private Sub dgvTarifas_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvTarifas.RowHeaderMouseClick
         lblTarifa_id.Text = dgvTarifas.CurrentRow.Cells(0).Value
         txtTarifas_Nombre.Text = dgvTarifas.CurrentRow.Cells(1).Value
-        cbTarifas_Tipo.Text = dgvTarifas.CurrentRow.Cells(2).Value
+        cbTarifas_Tipo.SelectedItem = dgvTarifas.CurrentRow.Cells(2).Value
         txtTarifas_Base.Text = dgvTarifas.CurrentRow.Cells(3).Value
         txtTarifas_Intermedia.Text = dgvTarifas.CurrentRow.Cells(4).Value
         txtTarifas_Excedente.Text = dgvTarifas.CurrentRow.Cells(5).Value
@@ -43,7 +43,7 @@
         Dim Fecha As Date = dtpTarifas_Fecha.Value
 
         Dim qry As New Tarifas_Querys()
-        qry.UpdateRate(id, RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha)
+        qry.UpdateRate(id, RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha, Globals.username)
         dgvTarifas.DataSource = qry.SelectAllFromRates()
         dgvTarifas.DataMember = "rates"
     End Sub

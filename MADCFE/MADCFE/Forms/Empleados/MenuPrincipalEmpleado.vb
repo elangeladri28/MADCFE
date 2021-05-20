@@ -28,4 +28,9 @@
         Dim domicilios As New Domicilios()
         domicilios.ShowDialog()
     End Sub
+
+    Private Sub MedidoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MedidoresToolStripMenuItem.Click
+        Dim Medidores As New Medidores()
+        Medidores.ShowDialog()
+    End Sub
 End Class

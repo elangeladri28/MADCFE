@@ -26,7 +26,7 @@ Public Class Usuarios_Querys
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
             Dim query As String = "EXEC InsertUser '" + username + "', '" + userPassword + "', '" + userType + "', '" + fullname + "', '" +
-                curp + "', '" + rfc + "', '" + birthday + "', '" + gender + "', 0, '" + user + "';"
+                curp + "', '" + rfc + "', '" + birthday.ToString() + "', '" + gender + "', 0, '" + user + "';"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "users")

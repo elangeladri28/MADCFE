@@ -21,6 +21,41 @@ Public Class Tarifas_Querys
         End Try
     End Function
 
+    Public Function SelectAllRatesNames()
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "EXEC SelectAllRatesNames;"
+            Dim dt As New DataTable()
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(dt)
+            conn.DisconnectSQL()
+            Return dt
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+    Public Function SelectRatesPricesByName(rateName As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "EXEC SelectRatesPricesByName '" + rateName + "';"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "rates")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
     Public Function InsertRate(rateName As String, rateType As String, baseRate As String, intermediateRate As String, excedentRate As String, active As Boolean, fecha As Date, user As String)
         Try
             Dim conn As New SQL_Connection()

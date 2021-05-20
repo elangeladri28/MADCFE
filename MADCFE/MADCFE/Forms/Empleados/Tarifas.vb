@@ -55,4 +55,64 @@
         dgvTarifas.DataSource = qry.SelectAllFromRates()
         dgvTarifas.DataMember = "rates"
     End Sub
+
+    Private Sub txtTarifas_Nombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTarifas_Nombre.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtTarifas_Base_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTarifas_Base.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtTarifas_Intermedia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTarifas_Intermedia.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtTarifas_Excedente_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTarifas_Excedente.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBoxTarifas_FiltroYear_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxTarifas_FiltroYear.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
 End Class

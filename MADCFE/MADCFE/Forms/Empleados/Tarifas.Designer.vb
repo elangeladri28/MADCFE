@@ -48,34 +48,38 @@ Partial Class Tarifas
         'dgvTarifas
         '
         Me.dgvTarifas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTarifas.Location = New System.Drawing.Point(12, 213)
+        Me.dgvTarifas.Location = New System.Drawing.Point(16, 262)
+        Me.dgvTarifas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvTarifas.Name = "dgvTarifas"
         Me.dgvTarifas.RowHeadersWidth = 51
-        Me.dgvTarifas.Size = New System.Drawing.Size(733, 293)
+        Me.dgvTarifas.Size = New System.Drawing.Size(977, 361)
         Me.dgvTarifas.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 9)
+        Me.Label1.Location = New System.Drawing.Point(28, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 13)
+        Me.Label1.Size = New System.Drawing.Size(118, 17)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre de tarifa:"
         '
         'txtTarifas_Nombre
         '
-        Me.txtTarifas_Nombre.Location = New System.Drawing.Point(24, 25)
+        Me.txtTarifas_Nombre.Location = New System.Drawing.Point(32, 31)
+        Me.txtTarifas_Nombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTarifas_Nombre.Name = "txtTarifas_Nombre"
-        Me.txtTarifas_Nombre.Size = New System.Drawing.Size(179, 20)
+        Me.txtTarifas_Nombre.Size = New System.Drawing.Size(237, 22)
         Me.txtTarifas_Nombre.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(232, 8)
+        Me.Label2.Location = New System.Drawing.Point(309, 10)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 13)
+        Me.Label2.Size = New System.Drawing.Size(96, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Tipo de tarifa:"
         '
@@ -84,116 +88,129 @@ Partial Class Tarifas
         Me.cbTarifas_Tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTarifas_Tipo.FormattingEnabled = True
         Me.cbTarifas_Tipo.Items.AddRange(New Object() {"Doméstica", "Industrial"})
-        Me.cbTarifas_Tipo.Location = New System.Drawing.Point(235, 24)
+        Me.cbTarifas_Tipo.Location = New System.Drawing.Point(313, 30)
+        Me.cbTarifas_Tipo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbTarifas_Tipo.Name = "cbTarifas_Tipo"
-        Me.cbTarifas_Tipo.Size = New System.Drawing.Size(170, 21)
+        Me.cbTarifas_Tipo.Size = New System.Drawing.Size(225, 24)
         Me.cbTarifas_Tipo.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(21, 60)
+        Me.Label3.Location = New System.Drawing.Point(28, 74)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
+        Me.Label3.Size = New System.Drawing.Size(84, 17)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Tarifa base:"
         '
         'txtTarifas_Base
         '
-        Me.txtTarifas_Base.Location = New System.Drawing.Point(24, 76)
+        Me.txtTarifas_Base.Location = New System.Drawing.Point(32, 94)
+        Me.txtTarifas_Base.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTarifas_Base.Name = "txtTarifas_Base"
-        Me.txtTarifas_Base.Size = New System.Drawing.Size(120, 20)
+        Me.txtTarifas_Base.Size = New System.Drawing.Size(159, 22)
         Me.txtTarifas_Base.TabIndex = 6
         '
         'txtTarifas_Intermedia
         '
-        Me.txtTarifas_Intermedia.Location = New System.Drawing.Point(166, 76)
+        Me.txtTarifas_Intermedia.Location = New System.Drawing.Point(221, 94)
+        Me.txtTarifas_Intermedia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTarifas_Intermedia.Name = "txtTarifas_Intermedia"
-        Me.txtTarifas_Intermedia.Size = New System.Drawing.Size(120, 20)
+        Me.txtTarifas_Intermedia.Size = New System.Drawing.Size(159, 22)
         Me.txtTarifas_Intermedia.TabIndex = 8
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(163, 60)
+        Me.Label4.Location = New System.Drawing.Point(217, 74)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 13)
+        Me.Label4.Size = New System.Drawing.Size(119, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Tarifa intermedia:"
         '
         'txtTarifas_Excedente
         '
-        Me.txtTarifas_Excedente.Location = New System.Drawing.Point(310, 76)
+        Me.txtTarifas_Excedente.Location = New System.Drawing.Point(413, 94)
+        Me.txtTarifas_Excedente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTarifas_Excedente.Name = "txtTarifas_Excedente"
-        Me.txtTarifas_Excedente.Size = New System.Drawing.Size(120, 20)
+        Me.txtTarifas_Excedente.Size = New System.Drawing.Size(159, 22)
         Me.txtTarifas_Excedente.TabIndex = 10
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(307, 60)
+        Me.Label5.Location = New System.Drawing.Point(409, 74)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(90, 13)
+        Me.Label5.Size = New System.Drawing.Size(118, 17)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Tarifa excedente:"
         '
         'chbTarifas_Activo
         '
         Me.chbTarifas_Activo.AutoSize = True
-        Me.chbTarifas_Activo.Location = New System.Drawing.Point(28, 124)
+        Me.chbTarifas_Activo.Location = New System.Drawing.Point(37, 153)
+        Me.chbTarifas_Activo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chbTarifas_Activo.Name = "chbTarifas_Activo"
-        Me.chbTarifas_Activo.Size = New System.Drawing.Size(56, 17)
+        Me.chbTarifas_Activo.Size = New System.Drawing.Size(68, 21)
         Me.chbTarifas_Activo.TabIndex = 11
         Me.chbTarifas_Activo.Text = "Activo"
         Me.chbTarifas_Activo.UseVisualStyleBackColor = True
         '
         'dtpTarifas_Fecha
         '
-        Me.dtpTarifas_Fecha.Location = New System.Drawing.Point(90, 121)
+        Me.dtpTarifas_Fecha.Location = New System.Drawing.Point(120, 149)
+        Me.dtpTarifas_Fecha.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpTarifas_Fecha.Name = "dtpTarifas_Fecha"
-        Me.dtpTarifas_Fecha.Size = New System.Drawing.Size(200, 20)
+        Me.dtpTarifas_Fecha.Size = New System.Drawing.Size(265, 22)
         Me.dtpTarifas_Fecha.TabIndex = 12
         '
         'btnTarifas_Insertar
         '
-        Me.btnTarifas_Insertar.Location = New System.Drawing.Point(23, 171)
+        Me.btnTarifas_Insertar.Location = New System.Drawing.Point(31, 210)
+        Me.btnTarifas_Insertar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnTarifas_Insertar.Name = "btnTarifas_Insertar"
-        Me.btnTarifas_Insertar.Size = New System.Drawing.Size(75, 23)
+        Me.btnTarifas_Insertar.Size = New System.Drawing.Size(100, 28)
         Me.btnTarifas_Insertar.TabIndex = 13
         Me.btnTarifas_Insertar.Text = "Insertar"
         Me.btnTarifas_Insertar.UseVisualStyleBackColor = True
         '
         'btnTarifas_Editar
         '
-        Me.btnTarifas_Editar.Location = New System.Drawing.Point(108, 171)
+        Me.btnTarifas_Editar.Location = New System.Drawing.Point(144, 210)
+        Me.btnTarifas_Editar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnTarifas_Editar.Name = "btnTarifas_Editar"
-        Me.btnTarifas_Editar.Size = New System.Drawing.Size(75, 23)
+        Me.btnTarifas_Editar.Size = New System.Drawing.Size(100, 28)
         Me.btnTarifas_Editar.TabIndex = 14
         Me.btnTarifas_Editar.Text = "Editar"
         Me.btnTarifas_Editar.UseVisualStyleBackColor = True
         '
         'btnTaifas_Eliminar
         '
-        Me.btnTaifas_Eliminar.Location = New System.Drawing.Point(197, 171)
+        Me.btnTaifas_Eliminar.Location = New System.Drawing.Point(263, 210)
+        Me.btnTaifas_Eliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnTaifas_Eliminar.Name = "btnTaifas_Eliminar"
-        Me.btnTaifas_Eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnTaifas_Eliminar.Size = New System.Drawing.Size(100, 28)
         Me.btnTaifas_Eliminar.TabIndex = 15
         Me.btnTaifas_Eliminar.Text = "Eliminar"
         Me.btnTaifas_Eliminar.UseVisualStyleBackColor = True
         '
         'TextBoxTarifas_FiltroYear
         '
-        Me.TextBoxTarifas_FiltroYear.Location = New System.Drawing.Point(584, 76)
+        Me.TextBoxTarifas_FiltroYear.Location = New System.Drawing.Point(779, 94)
+        Me.TextBoxTarifas_FiltroYear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxTarifas_FiltroYear.Name = "TextBoxTarifas_FiltroYear"
-        Me.TextBoxTarifas_FiltroYear.Size = New System.Drawing.Size(120, 20)
+        Me.TextBoxTarifas_FiltroYear.Size = New System.Drawing.Size(159, 22)
         Me.TextBoxTarifas_FiltroYear.TabIndex = 16
         '
         'btnTarifas_Filtrar
         '
-        Me.btnTarifas_Filtrar.Location = New System.Drawing.Point(598, 114)
-        Me.btnTarifas_Filtrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnTarifas_Filtrar.Location = New System.Drawing.Point(797, 140)
+        Me.btnTarifas_Filtrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnTarifas_Filtrar.Name = "btnTarifas_Filtrar"
-        Me.btnTarifas_Filtrar.Size = New System.Drawing.Size(88, 28)
+        Me.btnTarifas_Filtrar.Size = New System.Drawing.Size(117, 34)
         Me.btnTarifas_Filtrar.TabIndex = 17
         Me.btnTarifas_Filtrar.Text = "Filtrar"
         Me.btnTarifas_Filtrar.UseVisualStyleBackColor = True
@@ -201,28 +218,28 @@ Partial Class Tarifas
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(581, 59)
+        Me.Label6.Location = New System.Drawing.Point(775, 73)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(69, 13)
+        Me.Label6.Size = New System.Drawing.Size(93, 17)
         Me.Label6.TabIndex = 18
         Me.Label6.Text = "Filtro por Año"
         '
         'lblTarifa_id
         '
         Me.lblTarifa_id.AutoSize = True
-        Me.lblTarifa_id.Location = New System.Drawing.Point(357, 141)
-        Me.lblTarifa_id.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTarifa_id.Location = New System.Drawing.Point(476, 174)
         Me.lblTarifa_id.Name = "lblTarifa_id"
-        Me.lblTarifa_id.Size = New System.Drawing.Size(88, 13)
+        Me.lblTarifa_id.Size = New System.Drawing.Size(118, 17)
         Me.lblTarifa_id.TabIndex = 19
         Me.lblTarifa_id.Text = "P e r m a t r a g o"
         Me.lblTarifa_id.Visible = False
         '
         'Tarifas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(758, 519)
+        Me.ClientSize = New System.Drawing.Size(1011, 639)
         Me.Controls.Add(Me.lblTarifa_id)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnTarifas_Filtrar)
@@ -243,6 +260,7 @@ Partial Class Tarifas
         Me.Controls.Add(Me.txtTarifas_Nombre)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvTarifas)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Tarifas"
         Me.Text = "Tarifas"
         CType(Me.dgvTarifas, System.ComponentModel.ISupportInitialize).EndInit()

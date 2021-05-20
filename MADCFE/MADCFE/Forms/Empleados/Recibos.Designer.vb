@@ -26,7 +26,7 @@ Partial Class Recibos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtboxRecibos_NumeroServicio = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -41,7 +41,7 @@ Partial Class Recibos
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtboxRecibos_NumeroServicio)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -81,13 +81,13 @@ Partial Class Recibos
         Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtboxRecibos_NumeroServicio
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(15, 103)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(273, 22)
-        Me.TextBox1.TabIndex = 3
+        Me.txtboxRecibos_NumeroServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtboxRecibos_NumeroServicio.Location = New System.Drawing.Point(15, 103)
+        Me.txtboxRecibos_NumeroServicio.Name = "txtboxRecibos_NumeroServicio"
+        Me.txtboxRecibos_NumeroServicio.Size = New System.Drawing.Size(273, 22)
+        Me.txtboxRecibos_NumeroServicio.TabIndex = 3
         '
         'Label2
         '
@@ -162,7 +162,7 @@ Partial Class Recibos
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtboxRecibos_NumeroServicio As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label1 As Label

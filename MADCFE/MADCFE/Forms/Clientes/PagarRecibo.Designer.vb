@@ -34,10 +34,10 @@ Partial Class PagarRecibo
         Me.TextBoxPagarRecibo_CVV = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ButtonPagarRecibo_Generar = New System.Windows.Forms.Button()
         Me.ButtonPagarRecibo_Pagar = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ButtonPagarRecibo_Generar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -170,6 +170,17 @@ Partial Class PagarRecibo
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pago con Tarjeta"
         '
+        'ButtonPagarRecibo_Pagar
+        '
+        Me.ButtonPagarRecibo_Pagar.Enabled = False
+        Me.ButtonPagarRecibo_Pagar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPagarRecibo_Pagar.Location = New System.Drawing.Point(70, 419)
+        Me.ButtonPagarRecibo_Pagar.Name = "ButtonPagarRecibo_Pagar"
+        Me.ButtonPagarRecibo_Pagar.Size = New System.Drawing.Size(192, 69)
+        Me.ButtonPagarRecibo_Pagar.TabIndex = 12
+        Me.ButtonPagarRecibo_Pagar.Text = "PAGAR"
+        Me.ButtonPagarRecibo_Pagar.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.ButtonPagarRecibo_Generar)
@@ -182,6 +193,16 @@ Partial Class PagarRecibo
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Pago en Efectivo"
         '
+        'ButtonPagarRecibo_Generar
+        '
+        Me.ButtonPagarRecibo_Generar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPagarRecibo_Generar.Location = New System.Drawing.Point(63, 328)
+        Me.ButtonPagarRecibo_Generar.Name = "ButtonPagarRecibo_Generar"
+        Me.ButtonPagarRecibo_Generar.Size = New System.Drawing.Size(235, 80)
+        Me.ButtonPagarRecibo_Generar.TabIndex = 20
+        Me.ButtonPagarRecibo_Generar.Text = "GENERAR"
+        Me.ButtonPagarRecibo_Generar.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -193,27 +214,6 @@ Partial Class PagarRecibo
         Me.Label1.Text = "Los pagos en efectivo se realizan en " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "cualquier tienda de auto-servicio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(OXXO o" &
     " Seven), en este momento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "generaras la referencia y pagaras " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "directo en la tien" &
     "da."
-        '
-        'ButtonPagarRecibo_Generar
-        '
-        Me.ButtonPagarRecibo_Generar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPagarRecibo_Generar.Location = New System.Drawing.Point(63, 328)
-        Me.ButtonPagarRecibo_Generar.Name = "ButtonPagarRecibo_Generar"
-        Me.ButtonPagarRecibo_Generar.Size = New System.Drawing.Size(235, 80)
-        Me.ButtonPagarRecibo_Generar.TabIndex = 20
-        Me.ButtonPagarRecibo_Generar.Text = "GENERAR"
-        Me.ButtonPagarRecibo_Generar.UseVisualStyleBackColor = True
-        '
-        'ButtonPagarRecibo_Pagar
-        '
-        Me.ButtonPagarRecibo_Pagar.Enabled = False
-        Me.ButtonPagarRecibo_Pagar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPagarRecibo_Pagar.Location = New System.Drawing.Point(70, 419)
-        Me.ButtonPagarRecibo_Pagar.Name = "ButtonPagarRecibo_Pagar"
-        Me.ButtonPagarRecibo_Pagar.Size = New System.Drawing.Size(192, 69)
-        Me.ButtonPagarRecibo_Pagar.TabIndex = 12
-        Me.ButtonPagarRecibo_Pagar.Text = "PAGAR"
-        Me.ButtonPagarRecibo_Pagar.UseVisualStyleBackColor = True
         '
         'PagarRecibo
         '

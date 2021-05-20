@@ -60,6 +60,7 @@ Partial Class InicioSesion
         '
         Me.TextBoxInicioSesion_Contraseña.Location = New System.Drawing.Point(85, 195)
         Me.TextBoxInicioSesion_Contraseña.Name = "TextBoxInicioSesion_Contraseña"
+        Me.TextBoxInicioSesion_Contraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxInicioSesion_Contraseña.Size = New System.Drawing.Size(210, 22)
         Me.TextBoxInicioSesion_Contraseña.TabIndex = 4
         '

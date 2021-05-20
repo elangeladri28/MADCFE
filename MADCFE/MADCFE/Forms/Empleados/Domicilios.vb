@@ -63,4 +63,28 @@
         dgvDomicilios_Domicilios.DataSource = qry.SelectAllClientLocations(idClient)
         dgvDomicilios_Domicilios.DataMember = "locations"
     End Sub
+
+    Private Sub txtDomicilios_CodigoPostal_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDomicilios_CodigoPostal.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtDomicilios_Ciudad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDomicilios_Ciudad.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
 End Class

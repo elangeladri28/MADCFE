@@ -23,13 +23,13 @@ Public Class Medidores_Querys
 
 
 
-    Public Function InsertElectricityMeter(regimen As String, client As String, location As String, billingPeriod As String)
+    Public Function InsertElectricityMeter(regimen As String, client As String, location As String, billingPeriod As String, modifiedBy As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
 
-            Dim var() = {regimen, client, location, billingPeriod}
-            Dim query As String = String.Format("EXEC InsertLocation {0}, '{1}', '{2}', '{3}';", var)
+            Dim var() = {regimen, client, location, billingPeriod, modifiedBy}
+            Dim query As String = String.Format("EXEC InsertElectricityMeter '{0}', {1}, {2}, '{3}', '{4}';", var)
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "electricityMeters")

@@ -75,6 +75,8 @@
             e.Handled = False
         ElseIf Char.IsSeparator(e.KeyChar) Then
             e.Handled = False
+        ElseIf Char.IsPunctuation(e.KeyChar) Then
+            e.Handled = False
         Else
             e.Handled = True
         End If
@@ -87,6 +89,8 @@
             e.Handled = False
         ElseIf Char.IsSeparator(e.KeyChar) Then
             e.Handled = False
+        ElseIf Char.IsPunctuation(e.KeyChar) Then
+            e.Handled = False
         Else
             e.Handled = True
         End If
@@ -98,6 +102,8 @@
         ElseIf Char.IsControl(e.KeyChar) Then
             e.Handled = False
         ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsPunctuation(e.KeyChar) Then
             e.Handled = False
         Else
             e.Handled = True
@@ -114,5 +120,9 @@
         Else
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub btnTarifas_Filtrar_Click(sender As Object, e As EventArgs) Handles btnTarifas_Filtrar.Click
+
     End Sub
 End Class

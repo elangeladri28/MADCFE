@@ -34,12 +34,11 @@
             dgv_invi.DataSource = dgv.SelectRatesPricesByName(price)
             dgv_invi.DataMember = "rates"
 
-
-            If (dgv_invi.Columns.Count <> 0) Then
-                dgv_invi.Columns.Item(0).HeaderText = "Precio Base"
-                dgv_invi.Columns.Item(1).HeaderText = "Precio Intermedio"
-                dgv_invi.Columns.Item(2).HeaderText = "Precio Excedente"
-            End If
+            'If (dgv_invi.Columns.Count <> 0) Then
+            '    dgv_invi.Columns.Item(0).HeaderText = "Precio Base"
+            '    dgv_invi.Columns.Item(1).HeaderText = "Precio Intermedio"
+            '    dgv_invi.Columns.Item(2).HeaderText = "Precio Excedente"
+            'End If
 
             txtMedidores_PrecioBase.Text = ""
             txtMedidores_PrecioIntermedio.Text = ""
@@ -51,5 +50,22 @@
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub btnMedidores_Insertar_Click(sender As Object, e As EventArgs) Handles btnMedidores_Insertar.Click
+        Dim client As String = lblMedidores_idCliente.Text
+        Dim address As String = lblMedidores_idDomicilio.Text
+        Dim regimen As String = cbMedidores_Regimen.Text
+        Dim cobro As String = cbMedidores_PeriodoCobro.SelectedItem.ToString()
+
+        Dim qry As New Medidores_Querys()
+        qry.InsertElectricityMeter(regimen, client, address, cobro, Globals.username)
+        dgvMedidores_Medidores.DataSource = qry.SelectAllFromElectricityMeters()
+        dgvMedidores_Medidores.DataMember = "electricityMeters"
+
+    End Sub
+
+    Private Sub btnMedidores_Editar_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class

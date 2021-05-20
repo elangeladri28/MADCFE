@@ -33,4 +33,9 @@
         Dim Medidores As New Medidores()
         Medidores.ShowDialog()
     End Sub
+
+    Private Sub Consumos_Cargas_MenuPrincipal_Click(sender As Object, e As EventArgs) Handles Consumos_Cargas_MenuPrincipal.Click
+        Dim consumos As New Consumos()
+        consumos.ShowDialog()
+    End Sub
 End Class

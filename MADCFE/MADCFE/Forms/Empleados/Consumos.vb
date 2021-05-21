@@ -17,7 +17,7 @@
         End If
     End Sub
 
-    Private Sub txtConsumos_Kw_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtConsumos_Kw.KeyPress
+    Private Sub txtConsumos_Kw_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtConsumos_KwBase.KeyPress
         If Char.IsNumber(e.KeyChar) Then
             e.Handled = False
         ElseIf Char.IsControl(e.KeyChar) Then
@@ -59,15 +59,17 @@
     End Sub
 
     Private Sub btnConsumos_Insertar_Click(sender As Object, e As EventArgs) Handles btnConsumos_Insertar.Click
-        Dim Client As String = txtboxConsumos_NombreCliente.Text
+        Dim Client As String = lblConsumos_Username.Text
         Dim Regimen As String = txtboxConsumos_Regimen.Text
         Dim electricityMeter As String = txtConsumos_Medidor.Text
-        Dim kw As String = txtConsumos_Kw.Text
+        Dim kwBase As String = txtConsumos_KwBase.Text
+        Dim kwInter As String = txtConsumos_KwIntermedio.Text
+        Dim kwExcedente As String = txtConsumos_KwExcedentes.Text
         Dim fecha As String = dtpConsumos_Date.Value
 
         Dim qry As New Consumption_Querys()
-        qry.InsertComsumption(Client, Regimen, electricityMeter, kw, fecha, Globals.username)
-        dgvConsumos_Consumos.DataSource = qry.SelectClientsConsumption()
+        qry.InsertComsumption(Client, Regimen, electricityMeter, kwBase, kwInter, kwExcedente, fecha, Globals.username)
+        dgvConsumos_Consumos.DataSource = qry.SelectAllConsumptions()
         dgvConsumos_Consumos.DataMember = "comsumption"
 
     End Sub

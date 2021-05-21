@@ -30,7 +30,7 @@ Partial Class Consumos
         Me.txtConsumos_Medidor = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtConsumos_Kw = New System.Windows.Forms.TextBox()
+        Me.txtConsumos_KwBase = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dtpConsumos_Date = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -51,6 +51,10 @@ Partial Class Consumos
         Me.lbl = New System.Windows.Forms.Label()
         Me.dgv_invi_consumos = New System.Windows.Forms.DataGridView()
         Me.lblConsumos_Username = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtConsumos_KwIntermedio = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtConsumos_KwExcedentes = New System.Windows.Forms.TextBox()
         CType(Me.dgvConsumos_Clientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvConsumos_Consumos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_invi_consumos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,6 +69,7 @@ Partial Class Consumos
         Me.dgvConsumos_Clientes.RowHeadersWidth = 51
         Me.dgvConsumos_Clientes.Size = New System.Drawing.Size(931, 207)
         Me.dgvConsumos_Clientes.TabIndex = 0
+        Me.dgvConsumos_Clientes.TabStop = False
         '
         'dgvConsumos_Consumos
         '
@@ -75,6 +80,7 @@ Partial Class Consumos
         Me.dgvConsumos_Consumos.RowHeadersWidth = 51
         Me.dgvConsumos_Consumos.Size = New System.Drawing.Size(932, 302)
         Me.dgvConsumos_Consumos.TabIndex = 1
+        Me.dgvConsumos_Consumos.TabStop = False
         '
         'txtConsumos_NombreCliente
         '
@@ -106,18 +112,18 @@ Partial Class Consumos
         '
         'txtConsumos_Medidor
         '
-        Me.txtConsumos_Medidor.Location = New System.Drawing.Point(588, 341)
+        Me.txtConsumos_Medidor.Location = New System.Drawing.Point(557, 340)
         Me.txtConsumos_Medidor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtConsumos_Medidor.Name = "txtConsumos_Medidor"
         Me.txtConsumos_Medidor.ReadOnly = True
         Me.txtConsumos_Medidor.Size = New System.Drawing.Size(132, 22)
-        Me.txtConsumos_Medidor.TabIndex = 5
+        Me.txtConsumos_Medidor.TabIndex = 7
         Me.txtConsumos_Medidor.TabStop = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(584, 321)
+        Me.Label2.Location = New System.Drawing.Point(553, 320)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(137, 17)
@@ -127,47 +133,47 @@ Partial Class Consumos
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(748, 321)
+        Me.Label3.Location = New System.Drawing.Point(717, 320)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(131, 17)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Esquema de cobro:"
         '
-        'txtConsumos_Kw
+        'txtConsumos_KwBase
         '
-        Me.txtConsumos_Kw.Location = New System.Drawing.Point(17, 401)
-        Me.txtConsumos_Kw.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtConsumos_Kw.Name = "txtConsumos_Kw"
-        Me.txtConsumos_Kw.Size = New System.Drawing.Size(132, 22)
-        Me.txtConsumos_Kw.TabIndex = 9
+        Me.txtConsumos_KwBase.Location = New System.Drawing.Point(17, 407)
+        Me.txtConsumos_KwBase.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtConsumos_KwBase.Name = "txtConsumos_KwBase"
+        Me.txtConsumos_KwBase.Size = New System.Drawing.Size(132, 22)
+        Me.txtConsumos_KwBase.TabIndex = 9
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(13, 382)
+        Me.Label4.Location = New System.Drawing.Point(13, 388)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(113, 17)
+        Me.Label4.Size = New System.Drawing.Size(149, 17)
         Me.Label4.TabIndex = 10
-        Me.Label4.Text = "KW consumidos:"
+        Me.Label4.Text = "KW Base consumidos:"
         '
         'dtpConsumos_Date
         '
         Me.dtpConsumos_Date.CustomFormat = ""
         Me.dtpConsumos_Date.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
-        Me.dtpConsumos_Date.Location = New System.Drawing.Point(161, 402)
+        Me.dtpConsumos_Date.Location = New System.Drawing.Point(19, 463)
         Me.dtpConsumos_Date.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpConsumos_Date.MaxDate = New Date(2021, 5, 17, 0, 0, 0, 0)
         Me.dtpConsumos_Date.Name = "dtpConsumos_Date"
         Me.dtpConsumos_Date.Size = New System.Drawing.Size(265, 22)
-        Me.dtpConsumos_Date.TabIndex = 11
+        Me.dtpConsumos_Date.TabIndex = 15
         Me.dtpConsumos_Date.Value = New Date(2021, 5, 17, 0, 0, 0, 0)
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(157, 383)
+        Me.Label5.Location = New System.Drawing.Point(16, 442)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(132, 17)
@@ -176,31 +182,31 @@ Partial Class Consumos
         '
         'btnConsumos_Insertar
         '
-        Me.btnConsumos_Insertar.Location = New System.Drawing.Point(35, 460)
+        Me.btnConsumos_Insertar.Location = New System.Drawing.Point(518, 482)
         Me.btnConsumos_Insertar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnConsumos_Insertar.Name = "btnConsumos_Insertar"
         Me.btnConsumos_Insertar.Size = New System.Drawing.Size(100, 28)
-        Me.btnConsumos_Insertar.TabIndex = 13
+        Me.btnConsumos_Insertar.TabIndex = 16
         Me.btnConsumos_Insertar.Text = "Insertar"
         Me.btnConsumos_Insertar.UseVisualStyleBackColor = True
         '
         'btnConsumos_Editar
         '
-        Me.btnConsumos_Editar.Location = New System.Drawing.Point(172, 460)
+        Me.btnConsumos_Editar.Location = New System.Drawing.Point(655, 482)
         Me.btnConsumos_Editar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnConsumos_Editar.Name = "btnConsumos_Editar"
         Me.btnConsumos_Editar.Size = New System.Drawing.Size(100, 28)
-        Me.btnConsumos_Editar.TabIndex = 14
+        Me.btnConsumos_Editar.TabIndex = 17
         Me.btnConsumos_Editar.Text = "Editar"
         Me.btnConsumos_Editar.UseVisualStyleBackColor = True
         '
         'btnConsumos_Eliminar
         '
-        Me.btnConsumos_Eliminar.Location = New System.Drawing.Point(308, 460)
+        Me.btnConsumos_Eliminar.Location = New System.Drawing.Point(791, 482)
         Me.btnConsumos_Eliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnConsumos_Eliminar.Name = "btnConsumos_Eliminar"
         Me.btnConsumos_Eliminar.Size = New System.Drawing.Size(100, 28)
-        Me.btnConsumos_Eliminar.TabIndex = 15
+        Me.btnConsumos_Eliminar.TabIndex = 18
         Me.btnConsumos_Eliminar.Text = "Eliminar"
         Me.btnConsumos_Eliminar.UseVisualStyleBackColor = True
         '
@@ -221,7 +227,8 @@ Partial Class Consumos
         Me.txtConsumos_PrecioBase.Name = "txtConsumos_PrecioBase"
         Me.txtConsumos_PrecioBase.ReadOnly = True
         Me.txtConsumos_PrecioBase.Size = New System.Drawing.Size(111, 22)
-        Me.txtConsumos_PrecioBase.TabIndex = 17
+        Me.txtConsumos_PrecioBase.TabIndex = 12
+        Me.txtConsumos_PrecioBase.TabStop = False
         '
         'txtConsumos_PrecioIntermedio
         '
@@ -230,7 +237,8 @@ Partial Class Consumos
         Me.txtConsumos_PrecioIntermedio.Name = "txtConsumos_PrecioIntermedio"
         Me.txtConsumos_PrecioIntermedio.ReadOnly = True
         Me.txtConsumos_PrecioIntermedio.Size = New System.Drawing.Size(111, 22)
-        Me.txtConsumos_PrecioIntermedio.TabIndex = 18
+        Me.txtConsumos_PrecioIntermedio.TabIndex = 13
+        Me.txtConsumos_PrecioIntermedio.TabStop = False
         '
         'txtConsumos_PrecioExcedente
         '
@@ -239,7 +247,8 @@ Partial Class Consumos
         Me.txtConsumos_PrecioExcedente.Name = "txtConsumos_PrecioExcedente"
         Me.txtConsumos_PrecioExcedente.ReadOnly = True
         Me.txtConsumos_PrecioExcedente.Size = New System.Drawing.Size(111, 22)
-        Me.txtConsumos_PrecioExcedente.TabIndex = 19
+        Me.txtConsumos_PrecioExcedente.TabIndex = 14
+        Me.txtConsumos_PrecioExcedente.TabStop = False
         '
         'Label6
         '
@@ -276,17 +285,17 @@ Partial Class Consumos
         Me.txtboxConsumos_NombreCliente.Name = "txtboxConsumos_NombreCliente"
         Me.txtboxConsumos_NombreCliente.ReadOnly = True
         Me.txtboxConsumos_NombreCliente.Size = New System.Drawing.Size(132, 22)
-        Me.txtboxConsumos_NombreCliente.TabIndex = 23
+        Me.txtboxConsumos_NombreCliente.TabIndex = 5
         Me.txtboxConsumos_NombreCliente.TabStop = False
         '
         'txtboxConsumos_Regimen
         '
-        Me.txtboxConsumos_Regimen.Location = New System.Drawing.Point(751, 341)
+        Me.txtboxConsumos_Regimen.Location = New System.Drawing.Point(720, 340)
         Me.txtboxConsumos_Regimen.Margin = New System.Windows.Forms.Padding(4)
         Me.txtboxConsumos_Regimen.Name = "txtboxConsumos_Regimen"
         Me.txtboxConsumos_Regimen.ReadOnly = True
         Me.txtboxConsumos_Regimen.Size = New System.Drawing.Size(132, 22)
-        Me.txtboxConsumos_Regimen.TabIndex = 24
+        Me.txtboxConsumos_Regimen.TabIndex = 8
         Me.txtboxConsumos_Regimen.TabStop = False
         '
         'txtboxConsumos_Domicilio
@@ -296,7 +305,7 @@ Partial Class Consumos
         Me.txtboxConsumos_Domicilio.Name = "txtboxConsumos_Domicilio"
         Me.txtboxConsumos_Domicilio.ReadOnly = True
         Me.txtboxConsumos_Domicilio.Size = New System.Drawing.Size(150, 22)
-        Me.txtboxConsumos_Domicilio.TabIndex = 25
+        Me.txtboxConsumos_Domicilio.TabIndex = 6
         Me.txtboxConsumos_Domicilio.TabStop = False
         '
         'Label9
@@ -322,12 +331,13 @@ Partial Class Consumos
         'dgv_invi_consumos
         '
         Me.dgv_invi_consumos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_invi_consumos.Location = New System.Drawing.Point(450, 321)
+        Me.dgv_invi_consumos.Location = New System.Drawing.Point(889, 284)
         Me.dgv_invi_consumos.Name = "dgv_invi_consumos"
         Me.dgv_invi_consumos.RowHeadersWidth = 51
         Me.dgv_invi_consumos.RowTemplate.Height = 24
         Me.dgv_invi_consumos.Size = New System.Drawing.Size(58, 36)
         Me.dgv_invi_consumos.TabIndex = 28
+        Me.dgv_invi_consumos.TabStop = False
         Me.dgv_invi_consumos.Visible = False
         '
         'lblConsumos_Username
@@ -341,11 +351,53 @@ Partial Class Consumos
         Me.lblConsumos_Username.Text = "Soy invi jsjs"
         Me.lblConsumos_Username.Visible = False
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(184, 371)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(100, 34)
+        Me.Label10.TabIndex = 31
+        Me.Label10.Text = "KW Intermedio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "consumidos:"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'txtConsumos_KwIntermedio
+        '
+        Me.txtConsumos_KwIntermedio.Location = New System.Drawing.Point(176, 407)
+        Me.txtConsumos_KwIntermedio.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtConsumos_KwIntermedio.Name = "txtConsumos_KwIntermedio"
+        Me.txtConsumos_KwIntermedio.Size = New System.Drawing.Size(132, 22)
+        Me.txtConsumos_KwIntermedio.TabIndex = 10
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(338, 371)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(107, 34)
+        Me.Label11.TabIndex = 33
+        Me.Label11.Text = "KW Excedentes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "consumidos:"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'txtConsumos_KwExcedentes
+        '
+        Me.txtConsumos_KwExcedentes.Location = New System.Drawing.Point(333, 407)
+        Me.txtConsumos_KwExcedentes.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtConsumos_KwExcedentes.Name = "txtConsumos_KwExcedentes"
+        Me.txtConsumos_KwExcedentes.Size = New System.Drawing.Size(132, 22)
+        Me.txtConsumos_KwExcedentes.TabIndex = 11
+        '
         'Consumos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(980, 849)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.txtConsumos_KwExcedentes)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.txtConsumos_KwIntermedio)
         Me.Controls.Add(Me.lblConsumos_Username)
         Me.Controls.Add(Me.dgv_invi_consumos)
         Me.Controls.Add(Me.lbl)
@@ -366,7 +418,7 @@ Partial Class Consumos
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.dtpConsumos_Date)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtConsumos_Kw)
+        Me.Controls.Add(Me.txtConsumos_KwBase)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtConsumos_Medidor)
@@ -394,7 +446,7 @@ Partial Class Consumos
     Friend WithEvents txtConsumos_Medidor As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtConsumos_Kw As TextBox
+    Friend WithEvents txtConsumos_KwBase As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents dtpConsumos_Date As DateTimePicker
     Friend WithEvents Label5 As Label
@@ -415,4 +467,8 @@ Partial Class Consumos
     Friend WithEvents lbl As Label
     Friend WithEvents dgv_invi_consumos As DataGridView
     Friend WithEvents lblConsumos_Username As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents txtConsumos_KwIntermedio As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents txtConsumos_KwExcedentes As TextBox
 End Class

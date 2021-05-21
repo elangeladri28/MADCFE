@@ -8,5 +8,19 @@
 
         Pagar.ShowDialog()
 
+
+
+    End Sub
+
+    Private Sub txtboxConsultarRecibo_NumMedidor_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtboxConsultarRecibo_NumMedidor.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
     End Sub
 End Class

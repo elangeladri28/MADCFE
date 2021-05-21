@@ -25,6 +25,11 @@
         Dim id As String = lblMedidores_idDomicilio.Text
         txtMedidores_NombreCliente.Text = dgvMedidores_Domicilio.CurrentRow.Cells(1).Value
         txtMedidores_Calle.Text = dgvMedidores_Domicilio.CurrentRow.Cells(3).Value
+        Dim client As String = lblMedidores_idCliente.Text
+
+        Dim qry As New Medidores_Querys()
+        dgvMedidores_Medidores.DataSource = qry.SelectElectricityMetersByClient(client)
+        dgvMedidores_Medidores.DataMember = "electricityMeters"
     End Sub
 
     Private Sub cbMedidores_Regimen_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbMedidores_Regimen.SelectedIndexChanged
@@ -60,7 +65,7 @@
 
         Dim qry As New Medidores_Querys()
         qry.InsertElectricityMeter(regimen, client, address, cobro, Globals.username)
-        dgvMedidores_Medidores.DataSource = qry.SelectAllFromElectricityMeters()
+        dgvMedidores_Medidores.DataSource = qry.SelectElectricityMetersByClient(client)
         dgvMedidores_Medidores.DataMember = "electricityMeters"
 
     End Sub

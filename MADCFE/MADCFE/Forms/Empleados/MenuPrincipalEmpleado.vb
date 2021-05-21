@@ -38,4 +38,9 @@
         Dim consumos As New Consumos()
         consumos.ShowDialog()
     End Sub
+
+    Private Sub HISTORIALToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HISTORIALToolStripMenuItem.Click
+        Dim historial As New Historial()
+        historial.ShowDialog()
+    End Sub
 End Class

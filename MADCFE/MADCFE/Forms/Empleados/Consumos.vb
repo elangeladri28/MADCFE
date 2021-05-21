@@ -50,9 +50,9 @@
             txtConsumos_PrecioIntermedio.Text = dgv_invi_consumos.Rows(0).Cells(1).Value
             txtConsumos_PrecioExcedente.Text = dgv_invi_consumos.Rows(0).Cells(2).Value
 
-            Dim qry As New Consumption_Querys()
-            dgvConsumos_Consumos.DataSource = qry.SelectClientsConsumption()
-            dgvConsumos_Consumos.DataMember = "comsumption"
+            'Dim qry As New Consumption_Querys()
+            'dgvConsumos_Consumos.DataSource = qry.SelectClientsConsumption()
+            'dgvConsumos_Consumos.DataMember = "comsumption"
         Catch ex As Exception
 
         End Try

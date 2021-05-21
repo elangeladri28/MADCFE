@@ -89,6 +89,12 @@
     <Compile Include="Forms\Clientes\ConsultarRecibo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Clientes\Historialvb.Designer.vb">
+      <DependentUpon>Historialvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clientes\Historialvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clientes\PagarRecibo.Designer.vb">
       <DependentUpon>PagarRecibo.vb</DependentUpon>
     </Compile>
@@ -169,6 +175,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\Clientes\ConsultarRecibo.resx">
       <DependentUpon>ConsultarRecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clientes\Historialvb.resx">
+      <DependentUpon>Historialvb.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\PagarRecibo.resx">
       <DependentUpon>PagarRecibo.vb</DependentUpon>

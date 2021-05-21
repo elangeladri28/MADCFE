@@ -3,12 +3,12 @@ Public Class Medidores_Querys
     Dim dataadapter As New SqlDataAdapter()
     Dim ds As New DataSet()
 
-    Public Function SelectAllFromElectricityMeters()
+    Public Function SelectElectricityMetersByClient(client As String)
         Try
             Dim conn As New SQL_Connection()
             conn.ConnectSQL()
 
-            Dim query As String = "EXEC SelectAllFromElectricityMeters"
+            Dim query As String = "EXEC SelectElectricityMetersByClient " + client + ";"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "electricityMeters")

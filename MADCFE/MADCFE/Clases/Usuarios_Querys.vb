@@ -3,6 +3,7 @@
 Public Class Usuarios_Querys
     Dim dataadapter As New SqlDataAdapter()
     Dim ds As New DataSet()
+    Dim dt As New DataTable()
 
     Public Function SelectAllFromUsuarios()
         Try
@@ -78,6 +79,76 @@ Public Class Usuarios_Querys
             conn.ConnectSQL()
 
             Dim query As String = "EXEC SelectAllClientsFromUsers;"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+    Public Function SearchUsername(username As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "SELECT username FROM users WHERE username LIKE %" + username + "%;"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+
+        End Try
+    End Function
+
+    Public Function SelectAllUsernames()
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "SELECT username FROM users WHERE active = 1"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+    Public Function SearchPassword(username As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "
+DECLARE @id int;
+SET @id = (SELECT id from users WHERE username = '" + username + "');
+SELECT userPassword FROM rememberMe WHERE idUser = @id;"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+    Public Function IniciarSesion(username As String, password As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "SELECT username, userPassword FROM users WHERE username = '" + username + "' AND userPassword = '" + password + "';"
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "users")

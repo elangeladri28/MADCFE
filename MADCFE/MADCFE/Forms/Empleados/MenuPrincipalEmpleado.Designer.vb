@@ -38,13 +38,15 @@ Partial Class MenuPrincipalEmpleado
         Me.GeneraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Recibos_Generacion_MenuEmpleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.Reportes_Generacion_MenuEmpleado = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CONSULTASToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HISTORIALToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip_MenuEmpleado.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip_MenuEmpleado
         '
         Me.MenuStrip_MenuEmpleado.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip_MenuEmpleado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.CLIENTESToolStripMenuItem, Me.SERVICIOSToolStripMenuItem})
+        Me.MenuStrip_MenuEmpleado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.CLIENTESToolStripMenuItem, Me.SERVICIOSToolStripMenuItem, Me.CONSULTASToolStripMenuItem})
         Me.MenuStrip_MenuEmpleado.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip_MenuEmpleado.Name = "MenuStrip_MenuEmpleado"
         Me.MenuStrip_MenuEmpleado.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -105,25 +107,25 @@ Partial Class MenuPrincipalEmpleado
         'Tarifas_Cargas_MenuEmpleado
         '
         Me.Tarifas_Cargas_MenuEmpleado.Name = "Tarifas_Cargas_MenuEmpleado"
-        Me.Tarifas_Cargas_MenuEmpleado.Size = New System.Drawing.Size(180, 22)
+        Me.Tarifas_Cargas_MenuEmpleado.Size = New System.Drawing.Size(131, 22)
         Me.Tarifas_Cargas_MenuEmpleado.Text = "Tarifas"
         '
         'Consumos_Cargas_MenuPrincipal
         '
         Me.Consumos_Cargas_MenuPrincipal.Name = "Consumos_Cargas_MenuPrincipal"
-        Me.Consumos_Cargas_MenuPrincipal.Size = New System.Drawing.Size(180, 22)
+        Me.Consumos_Cargas_MenuPrincipal.Size = New System.Drawing.Size(131, 22)
         Me.Consumos_Cargas_MenuPrincipal.Text = "Consumos"
         '
         'DomiciliosToolStripMenuItem
         '
         Me.DomiciliosToolStripMenuItem.Name = "DomiciliosToolStripMenuItem"
-        Me.DomiciliosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DomiciliosToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.DomiciliosToolStripMenuItem.Text = "Domicilios"
         '
         'MedidoresToolStripMenuItem
         '
         Me.MedidoresToolStripMenuItem.Name = "MedidoresToolStripMenuItem"
-        Me.MedidoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MedidoresToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.MedidoresToolStripMenuItem.Text = "Medidores"
         '
         'GeneraciónToolStripMenuItem
@@ -145,6 +147,19 @@ Partial Class MenuPrincipalEmpleado
         Me.Reportes_Generacion_MenuEmpleado.Size = New System.Drawing.Size(120, 22)
         Me.Reportes_Generacion_MenuEmpleado.Text = "Reportes"
         '
+        'CONSULTASToolStripMenuItem
+        '
+        Me.CONSULTASToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HISTORIALToolStripMenuItem})
+        Me.CONSULTASToolStripMenuItem.Name = "CONSULTASToolStripMenuItem"
+        Me.CONSULTASToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
+        Me.CONSULTASToolStripMenuItem.Text = "CONSULTAS"
+        '
+        'HISTORIALToolStripMenuItem
+        '
+        Me.HISTORIALToolStripMenuItem.Name = "HISTORIALToolStripMenuItem"
+        Me.HISTORIALToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HISTORIALToolStripMenuItem.Text = "Historial"
+        '
         'MenuPrincipalEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -155,7 +170,7 @@ Partial Class MenuPrincipalEmpleado
         Me.Controls.Add(Me.MenuStrip_MenuEmpleado)
         Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.MenuStrip_MenuEmpleado
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuPrincipalEmpleado"
         Me.Text = "Menu Principal Empleado"
         Me.MenuStrip_MenuEmpleado.ResumeLayout(False)
@@ -181,4 +196,6 @@ Partial Class MenuPrincipalEmpleado
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DomiciliosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MedidoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CONSULTASToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HISTORIALToolStripMenuItem As ToolStripMenuItem
 End Class

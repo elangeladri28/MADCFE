@@ -64,4 +64,16 @@
     Private Sub ButtonPagarRecibo_Generar_Click(sender As Object, e As EventArgs) Handles ButtonPagarRecibo_Generar.Click
 
     End Sub
+
+    Private Sub ButtonPagarRecibo_Pagar_Click(sender As Object, e As EventArgs) Handles ButtonPagarRecibo_Pagar.Click
+        If TextBoxPagarRecibo_Numeracion.Text <> "" And TextBoxPagarRecibo_Mes.Text <> "" And TextBoxPagarRecibo_Year.Text <> "" And TextBoxPagarRecibo_CVV.Text <> "" Then
+
+            MessageBox.Show("Pago Realizado", "¡Gracias!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Me.Close()
+        Else
+
+            MessageBox.Show("Datos incompletos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        End If
+    End Sub
 End Class

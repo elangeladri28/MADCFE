@@ -26,22 +26,26 @@ Public Class InicioSesion
         Dim qry As New Usuarios_Querys()
         dgvLogin_Users.DataSource = qry.IniciarSesion(username, password)
         dgvLogin_Users.DataMember = "users"
-        If dgvLogin_Users.Rows.Count > 1 Then
-            If ComboBoxInicioSesion_Tipo.Text = "Empleado" Then
-                Dim Menu As New MenuPrincipalEmpleado()
-                Me.Hide()
-                Menu.ShowDialog()
-                Me.Close()
-            End If
 
-            If ComboBoxInicioSesion_Tipo.Text = "Cliente" Then
-                Dim MenuUser As New ConsultarRecibo()
-                Me.Hide()
-                MenuUser.ShowDialog()
-                Me.Close()
+
+        If ComboBoxInicioSesion_Tipo.Text <> "" And TextBoxInicioSesion_Usuario.Text <> "" And TextBoxInicioSesion_Contraseña.Text <> "" Then
+            If dgvLogin_Users.Rows.Count >= 1 Then
+                If ComboBoxInicioSesion_Tipo.Text = "Empleado" Then
+                    Dim Menu As New MenuPrincipalEmpleado()
+                    Me.Hide()
+                    Menu.ShowDialog()
+                    Me.Close()
+                End If
+
+                If ComboBoxInicioSesion_Tipo.Text = "Cliente" Then
+                    Dim MenuUser As New ConsultarRecibo()
+                    Me.Hide()
+                    MenuUser.ShowDialog()
+                    Me.Close()
+                End If
             End If
         Else
-            MessageBox.Show("Error al iniciar sesión", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Faltan Datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
         If chbIniciarSesion_RememberMe.Checked Then

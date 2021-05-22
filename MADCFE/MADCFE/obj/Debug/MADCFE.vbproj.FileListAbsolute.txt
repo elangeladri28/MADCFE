@@ -56,3 +56,4 @@ C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Tarifas.reso
 C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.vbprojAssemblyReference.cache
 C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Historial.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.Historial.resources
+C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.GenerarRecibo.resources

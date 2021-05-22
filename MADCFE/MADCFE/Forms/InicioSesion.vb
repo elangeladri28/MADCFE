@@ -21,6 +21,8 @@ Public Class InicioSesion
     Private Sub ButtonInicioSesion_Iniciar_Click(sender As Object, e As EventArgs) Handles ButtonInicioSesion_Iniciar.Click
         Dim username As String = TextBoxInicioSesion_Usuario.Text
         Dim password As String = TextBoxInicioSesion_Contraseña.Text
+        Globals.username = username
+        Globals.TipoUsuario = ComboBoxInicioSesion_Tipo.Text
         Dim qry As New Usuarios_Querys()
         dgvLogin_Users.DataSource = qry.IniciarSesion(username, password)
         dgvLogin_Users.DataMember = "users"
@@ -41,8 +43,6 @@ Public Class InicioSesion
         Else
             MessageBox.Show("Error al iniciar sesión", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-
-
 
         If chbIniciarSesion_RememberMe.Checked Then
 

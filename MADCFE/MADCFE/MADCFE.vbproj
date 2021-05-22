@@ -102,6 +102,12 @@
     <Compile Include="Forms\Clientes\PagarRecibo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Empleados\GenerarRecibo.Designer.vb">
+      <DependentUpon>GenerarRecibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\GenerarRecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Empleados\Tarifas.Designer.vb">
       <DependentUpon>Tarifas.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\PagarRecibo.resx">
       <DependentUpon>PagarRecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\GenerarRecibo.resx">
+      <DependentUpon>GenerarRecibo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Empleados\Tarifas.resx">
       <DependentUpon>Tarifas.vb</DependentUpon>

@@ -131,6 +131,7 @@ Partial Class InicioSesion
         Me.dgvLogin_password.Name = "dgvLogin_password"
         Me.dgvLogin_password.Size = New System.Drawing.Size(261, 148)
         Me.dgvLogin_password.TabIndex = 8
+        Me.dgvLogin_password.Visible = False
         '
         'InicioSesion
         '
@@ -138,7 +139,7 @@ Partial Class InicioSesion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MADCFE.My.Resources.Resources.CFE_removebg_preview
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(285, 479)
+        Me.ClientSize = New System.Drawing.Size(285, 272)
         Me.Controls.Add(Me.dgvLogin_password)
         Me.Controls.Add(Me.dgvLogin_Users)
         Me.Controls.Add(Me.chbIniciarSesion_RememberMe)

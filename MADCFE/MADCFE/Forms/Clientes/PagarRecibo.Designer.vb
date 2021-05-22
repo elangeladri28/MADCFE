@@ -106,16 +106,16 @@ Partial Class PagarRecibo
         Me.TextBoxPagarRecibo_Mes.Enabled = False
         Me.TextBoxPagarRecibo_Mes.Location = New System.Drawing.Point(23, 301)
         Me.TextBoxPagarRecibo_Mes.Name = "TextBoxPagarRecibo_Mes"
-        Me.TextBoxPagarRecibo_Mes.Size = New System.Drawing.Size(44, 30)
+        Me.TextBoxPagarRecibo_Mes.Size = New System.Drawing.Size(55, 30)
         Me.TextBoxPagarRecibo_Mes.TabIndex = 7
         Me.TextBoxPagarRecibo_Mes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBoxPagarRecibo_Year
         '
         Me.TextBoxPagarRecibo_Year.Enabled = False
-        Me.TextBoxPagarRecibo_Year.Location = New System.Drawing.Point(114, 301)
+        Me.TextBoxPagarRecibo_Year.Location = New System.Drawing.Point(123, 300)
         Me.TextBoxPagarRecibo_Year.Name = "TextBoxPagarRecibo_Year"
-        Me.TextBoxPagarRecibo_Year.Size = New System.Drawing.Size(44, 30)
+        Me.TextBoxPagarRecibo_Year.Size = New System.Drawing.Size(54, 30)
         Me.TextBoxPagarRecibo_Year.TabIndex = 9
         Me.TextBoxPagarRecibo_Year.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -123,7 +123,7 @@ Partial Class PagarRecibo
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(81, 296)
+        Me.Label6.Location = New System.Drawing.Point(88, 301)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(21, 29)
         Me.Label6.TabIndex = 10
@@ -134,7 +134,7 @@ Partial Class PagarRecibo
         Me.TextBoxPagarRecibo_CVV.Enabled = False
         Me.TextBoxPagarRecibo_CVV.Location = New System.Drawing.Point(24, 367)
         Me.TextBoxPagarRecibo_CVV.Name = "TextBoxPagarRecibo_CVV"
-        Me.TextBoxPagarRecibo_CVV.Size = New System.Drawing.Size(44, 30)
+        Me.TextBoxPagarRecibo_CVV.Size = New System.Drawing.Size(54, 30)
         Me.TextBoxPagarRecibo_CVV.TabIndex = 11
         Me.TextBoxPagarRecibo_CVV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '

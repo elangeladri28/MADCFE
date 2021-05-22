@@ -25,6 +25,12 @@
     End Sub
 
     Private Sub btnConsultar_Historial_Click(sender As Object, e As EventArgs) Handles btnConsultar_Historial.Click
+        Dim Historial As New Historial()
+
+        Historial.ShowDialog()
+    End Sub
+
+    Private Sub DGVConsultarRecibo_Recibos_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGVConsultarRecibo_Recibos.RowHeaderMouseClick
 
     End Sub
 End Class

@@ -60,6 +60,7 @@ Partial Class ConsultarRecibo
         '
         Me.txtboxConsultarRecibo_NumMedidor.Location = New System.Drawing.Point(27, 57)
         Me.txtboxConsultarRecibo_NumMedidor.Name = "txtboxConsultarRecibo_NumMedidor"
+        Me.txtboxConsultarRecibo_NumMedidor.ReadOnly = True
         Me.txtboxConsultarRecibo_NumMedidor.Size = New System.Drawing.Size(283, 22)
         Me.txtboxConsultarRecibo_NumMedidor.TabIndex = 2
         '
@@ -75,6 +76,7 @@ Partial Class ConsultarRecibo
         '
         'ButtonConsultarRecibos_Descargar
         '
+        Me.ButtonConsultarRecibos_Descargar.Enabled = False
         Me.ButtonConsultarRecibos_Descargar.Location = New System.Drawing.Point(323, 593)
         Me.ButtonConsultarRecibos_Descargar.Name = "ButtonConsultarRecibos_Descargar"
         Me.ButtonConsultarRecibos_Descargar.Size = New System.Drawing.Size(190, 55)
@@ -102,6 +104,7 @@ Partial Class ConsultarRecibo
         '
         'btnConsultar_Historial
         '
+        Me.btnConsultar_Historial.Enabled = False
         Me.btnConsultar_Historial.Location = New System.Drawing.Point(73, 593)
         Me.btnConsultar_Historial.Name = "btnConsultar_Historial"
         Me.btnConsultar_Historial.Size = New System.Drawing.Size(190, 55)

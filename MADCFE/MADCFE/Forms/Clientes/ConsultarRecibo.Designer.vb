@@ -24,11 +24,12 @@ Partial Class ConsultarRecibo
     Private Sub InitializeComponent()
         Me.DGVConsultarRecibo_Recibos = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtboxConsultarRecibo_NumMedidor = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.ButtonConsultarRecibos_Descargar = New System.Windows.Forms.Button()
         Me.ButtonConsultarRecibos_Pagar = New System.Windows.Forms.Button()
         Me.ButtonConsultarRecibos_Salir = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtboxConsultarRecibo_NumMedidor = New System.Windows.Forms.TextBox()
+        Me.btnConsultar_Historial = New System.Windows.Forms.Button()
         CType(Me.DGVConsultarRecibo_Recibos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -55,32 +56,12 @@ Partial Class ConsultarRecibo
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Recibos"
         '
-        'ButtonConsultarRecibos_Descargar
+        'txtboxConsultarRecibo_NumMedidor
         '
-        Me.ButtonConsultarRecibos_Descargar.Location = New System.Drawing.Point(202, 600)
-        Me.ButtonConsultarRecibos_Descargar.Name = "ButtonConsultarRecibos_Descargar"
-        Me.ButtonConsultarRecibos_Descargar.Size = New System.Drawing.Size(190, 55)
-        Me.ButtonConsultarRecibos_Descargar.TabIndex = 9
-        Me.ButtonConsultarRecibos_Descargar.Text = "DESCARGAR"
-        Me.ButtonConsultarRecibos_Descargar.UseVisualStyleBackColor = True
-        '
-        'ButtonConsultarRecibos_Pagar
-        '
-        Me.ButtonConsultarRecibos_Pagar.Location = New System.Drawing.Point(467, 600)
-        Me.ButtonConsultarRecibos_Pagar.Name = "ButtonConsultarRecibos_Pagar"
-        Me.ButtonConsultarRecibos_Pagar.Size = New System.Drawing.Size(190, 55)
-        Me.ButtonConsultarRecibos_Pagar.TabIndex = 10
-        Me.ButtonConsultarRecibos_Pagar.Text = "PAGAR"
-        Me.ButtonConsultarRecibos_Pagar.UseVisualStyleBackColor = True
-        '
-        'ButtonConsultarRecibos_Salir
-        '
-        Me.ButtonConsultarRecibos_Salir.Location = New System.Drawing.Point(728, 600)
-        Me.ButtonConsultarRecibos_Salir.Name = "ButtonConsultarRecibos_Salir"
-        Me.ButtonConsultarRecibos_Salir.Size = New System.Drawing.Size(190, 55)
-        Me.ButtonConsultarRecibos_Salir.TabIndex = 11
-        Me.ButtonConsultarRecibos_Salir.Text = "SALIR"
-        Me.ButtonConsultarRecibos_Salir.UseVisualStyleBackColor = True
+        Me.txtboxConsultarRecibo_NumMedidor.Location = New System.Drawing.Point(27, 57)
+        Me.txtboxConsultarRecibo_NumMedidor.Name = "txtboxConsultarRecibo_NumMedidor"
+        Me.txtboxConsultarRecibo_NumMedidor.Size = New System.Drawing.Size(283, 22)
+        Me.txtboxConsultarRecibo_NumMedidor.TabIndex = 2
         '
         'Label2
         '
@@ -92,12 +73,41 @@ Partial Class ConsultarRecibo
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "NUMERO DE MEDIDOR:"
         '
-        'txtboxConsultarRecibo_NumMedidor
+        'ButtonConsultarRecibos_Descargar
         '
-        Me.txtboxConsultarRecibo_NumMedidor.Location = New System.Drawing.Point(27, 57)
-        Me.txtboxConsultarRecibo_NumMedidor.Name = "txtboxConsultarRecibo_NumMedidor"
-        Me.txtboxConsultarRecibo_NumMedidor.Size = New System.Drawing.Size(283, 22)
-        Me.txtboxConsultarRecibo_NumMedidor.TabIndex = 2
+        Me.ButtonConsultarRecibos_Descargar.Location = New System.Drawing.Point(323, 593)
+        Me.ButtonConsultarRecibos_Descargar.Name = "ButtonConsultarRecibos_Descargar"
+        Me.ButtonConsultarRecibos_Descargar.Size = New System.Drawing.Size(190, 55)
+        Me.ButtonConsultarRecibos_Descargar.TabIndex = 10
+        Me.ButtonConsultarRecibos_Descargar.Text = "DESCARGAR"
+        Me.ButtonConsultarRecibos_Descargar.UseVisualStyleBackColor = True
+        '
+        'ButtonConsultarRecibos_Pagar
+        '
+        Me.ButtonConsultarRecibos_Pagar.Location = New System.Drawing.Point(579, 593)
+        Me.ButtonConsultarRecibos_Pagar.Name = "ButtonConsultarRecibos_Pagar"
+        Me.ButtonConsultarRecibos_Pagar.Size = New System.Drawing.Size(190, 55)
+        Me.ButtonConsultarRecibos_Pagar.TabIndex = 11
+        Me.ButtonConsultarRecibos_Pagar.Text = "PAGAR"
+        Me.ButtonConsultarRecibos_Pagar.UseVisualStyleBackColor = True
+        '
+        'ButtonConsultarRecibos_Salir
+        '
+        Me.ButtonConsultarRecibos_Salir.Location = New System.Drawing.Point(836, 593)
+        Me.ButtonConsultarRecibos_Salir.Name = "ButtonConsultarRecibos_Salir"
+        Me.ButtonConsultarRecibos_Salir.Size = New System.Drawing.Size(190, 55)
+        Me.ButtonConsultarRecibos_Salir.TabIndex = 12
+        Me.ButtonConsultarRecibos_Salir.Text = "SALIR"
+        Me.ButtonConsultarRecibos_Salir.UseVisualStyleBackColor = True
+        '
+        'btnConsultar_Historial
+        '
+        Me.btnConsultar_Historial.Location = New System.Drawing.Point(73, 593)
+        Me.btnConsultar_Historial.Name = "btnConsultar_Historial"
+        Me.btnConsultar_Historial.Size = New System.Drawing.Size(190, 55)
+        Me.btnConsultar_Historial.TabIndex = 9
+        Me.btnConsultar_Historial.Text = "HISTORIAL"
+        Me.btnConsultar_Historial.UseVisualStyleBackColor = True
         '
         'ConsultarRecibo
         '
@@ -105,6 +115,7 @@ Partial Class ConsultarRecibo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1096, 683)
+        Me.Controls.Add(Me.btnConsultar_Historial)
         Me.Controls.Add(Me.ButtonConsultarRecibos_Salir)
         Me.Controls.Add(Me.ButtonConsultarRecibos_Pagar)
         Me.Controls.Add(Me.ButtonConsultarRecibos_Descargar)
@@ -125,4 +136,5 @@ Partial Class ConsultarRecibo
     Friend WithEvents ButtonConsultarRecibos_Salir As Button
     Friend WithEvents txtboxConsultarRecibo_NumMedidor As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents btnConsultar_Historial As Button
 End Class

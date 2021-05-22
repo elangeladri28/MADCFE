@@ -23,4 +23,8 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub btnConsultar_Historial_Click(sender As Object, e As EventArgs) Handles btnConsultar_Historial.Click
+
+    End Sub
 End Class

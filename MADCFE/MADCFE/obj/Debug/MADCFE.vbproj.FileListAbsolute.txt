@@ -55,3 +55,4 @@ C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MAD
 C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Tarifas.resources
 C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.vbprojAssemblyReference.cache
 C:\Users\david\Documents\.git\MADCFE\MADCFE\MADCFE\obj\Debug\MADCFE.Historial.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Terceras\Avance2\MADCFE\MADCFE\obj\Debug\MADCFE.Historial.resources

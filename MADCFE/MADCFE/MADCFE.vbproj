@@ -78,6 +78,7 @@
     <Compile Include="Clases\Consumption_Querys.vb" />
     <Compile Include="Clases\Domicilios_Querys.vb" />
     <Compile Include="Clases\Globals.vb" />
+    <Compile Include="Clases\Historial_Querys.vb" />
     <Compile Include="Clases\Medidores_Querys.vb" />
     <Compile Include="Clases\Periodos_Querys.vb" />
     <Compile Include="Clases\SQL_Connection.vb" />

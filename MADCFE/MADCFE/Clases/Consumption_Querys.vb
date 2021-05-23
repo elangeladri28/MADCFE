@@ -48,7 +48,7 @@ Public Class Consumption_Querys
             conn.ConnectSQL()
 
             Dim var() = {client, regimen, electricityMeter, kwBase, kwIntermediate, kwExcedent, fecha, modifiedBy}
-            Dim query As String = String.Format("EXEC InsertComsumption '{0}', '{1}', {2}, {3}, {4}, {5}, '{6}', '{7}';", var)
+            Dim query As String = String.Format("EXEC InsertComsumptionNew '{0}', '{1}', {2}, {3}, {4}, {5}, '{6}', '{7}';", var)
             Dim sqlCom As New SqlCommand(query, conn.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "comsumption")

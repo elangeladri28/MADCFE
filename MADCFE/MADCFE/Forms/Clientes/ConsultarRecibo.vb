@@ -33,4 +33,8 @@
     Private Sub DGVConsultarRecibo_Recibos_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGVConsultarRecibo_Recibos.RowHeaderMouseClick
 
     End Sub
+
+    Private Sub ButtonConsultarRecibos_Descargar_Click(sender As Object, e As EventArgs) Handles ButtonConsultarRecibos_Descargar.Click
+
+    End Sub
 End Class

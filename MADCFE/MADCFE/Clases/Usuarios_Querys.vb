@@ -159,4 +159,21 @@ SELECT userPassword FROM rememberMe WHERE idUser = @id;"
             MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Function
+
+    Public Function GetIdByUsername(username As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "SELECT id, fullname, username, birthday FROM users WHERE username = '" + username + "';"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
 End Class

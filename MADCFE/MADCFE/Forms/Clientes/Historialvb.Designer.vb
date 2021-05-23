@@ -40,25 +40,25 @@ Partial Class Historial
         Me.dgvHistorial_Usuarios.Location = New System.Drawing.Point(18, 46)
         Me.dgvHistorial_Usuarios.Name = "dgvHistorial_Usuarios"
         Me.dgvHistorial_Usuarios.RowHeadersWidth = 51
-        Me.dgvHistorial_Usuarios.Size = New System.Drawing.Size(437, 150)
+        Me.dgvHistorial_Usuarios.Size = New System.Drawing.Size(576, 350)
         Me.dgvHistorial_Usuarios.TabIndex = 0
         '
         'dgvHistorial_Medidores
         '
         Me.dgvHistorial_Medidores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvHistorial_Medidores.Location = New System.Drawing.Point(18, 246)
+        Me.dgvHistorial_Medidores.Location = New System.Drawing.Point(18, 431)
         Me.dgvHistorial_Medidores.Name = "dgvHistorial_Medidores"
         Me.dgvHistorial_Medidores.RowHeadersWidth = 51
-        Me.dgvHistorial_Medidores.Size = New System.Drawing.Size(437, 150)
+        Me.dgvHistorial_Medidores.Size = New System.Drawing.Size(576, 197)
         Me.dgvHistorial_Medidores.TabIndex = 1
         '
         'dgvHistorial_Historial
         '
         Me.dgvHistorial_Historial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvHistorial_Historial.Location = New System.Drawing.Point(485, 46)
+        Me.dgvHistorial_Historial.Location = New System.Drawing.Point(600, 46)
         Me.dgvHistorial_Historial.Name = "dgvHistorial_Historial"
         Me.dgvHistorial_Historial.RowHeadersWidth = 51
-        Me.dgvHistorial_Historial.Size = New System.Drawing.Size(536, 350)
+        Me.dgvHistorial_Historial.Size = New System.Drawing.Size(637, 582)
         Me.dgvHistorial_Historial.TabIndex = 2
         '
         'Label1
@@ -74,7 +74,7 @@ Partial Class Historial
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(16, 228)
+        Me.Label2.Location = New System.Drawing.Point(16, 413)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(119, 13)
@@ -94,7 +94,7 @@ Partial Class Historial
         'lblIDHistorial_Medidor
         '
         Me.lblIDHistorial_Medidor.AutoSize = True
-        Me.lblIDHistorial_Medidor.Location = New System.Drawing.Point(344, 228)
+        Me.lblIDHistorial_Medidor.Location = New System.Drawing.Point(344, 413)
         Me.lblIDHistorial_Medidor.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblIDHistorial_Medidor.Name = "lblIDHistorial_Medidor"
         Me.lblIDHistorial_Medidor.Size = New System.Drawing.Size(59, 13)
@@ -105,7 +105,7 @@ Partial Class Historial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1033, 428)
+        Me.ClientSize = New System.Drawing.Size(1249, 652)
         Me.Controls.Add(Me.lblIDHistorial_Medidor)
         Me.Controls.Add(Me.lblIDHistorial_Cliente)
         Me.Controls.Add(Me.Label2)

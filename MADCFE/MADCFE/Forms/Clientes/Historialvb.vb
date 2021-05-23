@@ -1,9 +1,18 @@
 ﻿Public Class Historial
     Private Sub Historial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         Dim qry As New Usuarios_Querys()
-        dgvHistorial_Usuarios.DataSource = qry.SelectAllClientsFromUsuarios()
-        dgvHistorial_Usuarios.DataMember = "users"
+        If Globals.TipoUsuario = "Cliente" Then
+            dgvHistorial_Usuarios.DataSource = qry.GetIdByUsername(Globals.username)
+            dgvHistorial_Usuarios.DataMember = "users"
+            lblIDHistorial_Cliente.Text = dgvHistorial_Usuarios.CurrentRow.Cells(0).Value
+            Dim qry2 As New Medidores_Querys()
+            dgvHistorial_Medidores.DataSource = qry2.SelectElectricityMetersByClient(lblIDHistorial_Cliente.Text)
+            dgvHistorial_Medidores.DataMember = "electricityMeters"
+        Else
+            dgvHistorial_Usuarios.DataSource = qry.SelectAllClientsFromUsuarios()
+            dgvHistorial_Usuarios.DataMember = "users"
+        End If
+
 
     End Sub
 

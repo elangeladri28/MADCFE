@@ -33,10 +33,22 @@
 
         lblDomicilios_idClient.Text = dgvDomicilios_Clientes.CurrentRow.Cells(0).Value
         Dim id As String = lblDomicilios_idClient.Text
-        Dim qry As New Domicilios_Querys()
-        qry.InsertLocation(id, address, city, state, pc, Globals.username)
-        dgvDomicilios_Domicilios.DataSource = qry.SelectAllClientLocations(id)
-        dgvDomicilios_Domicilios.DataMember = "locations"
+
+        If txtDomicilios_Direccion.Text <> "" And txtDomicilios_Ciudad.Text <> "" And txtDomicilios_Estado.Text <> "" And
+            txtDomicilios_CodigoPostal.Text <> "" Then
+
+            Dim qry As New Domicilios_Querys()
+            qry.InsertLocation(id, address, city, state, pc, Globals.username)
+            dgvDomicilios_Domicilios.DataSource = qry.SelectAllClientLocations(id)
+            dgvDomicilios_Domicilios.DataMember = "locations"
+
+        Else
+
+            MessageBox.Show("Faltan Datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+
     End Sub
 
     Private Sub btnDomicilios_Editar_Click(sender As Object, e As EventArgs) Handles btnDomicilios_Editar.Click

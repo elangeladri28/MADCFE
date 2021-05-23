@@ -63,10 +63,18 @@
         Dim regimen As String = cbMedidores_Regimen.Text
         Dim cobro As String = cbMedidores_PeriodoCobro.SelectedItem.ToString()
 
-        Dim qry As New Medidores_Querys()
-        qry.InsertElectricityMeter(regimen, client, address, cobro, Globals.username)
-        dgvMedidores_Medidores.DataSource = qry.SelectElectricityMetersByClient(client)
-        dgvMedidores_Medidores.DataMember = "electricityMeters"
+        If cbMedidores_PeriodoCobro.Text <> "" And cbMedidores_Regimen.Text <> "" Then
+
+            Dim qry As New Medidores_Querys()
+            qry.InsertElectricityMeter(regimen, client, address, cobro, Globals.username)
+            dgvMedidores_Medidores.DataSource = qry.SelectElectricityMetersByClient(client)
+            dgvMedidores_Medidores.DataMember = "electricityMeters"
+
+        Else
+
+            MessageBox.Show("Faltan Datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
 
     End Sub
 

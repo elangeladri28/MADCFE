@@ -62,6 +62,13 @@
     End Sub
 
     Private Sub ButtonPagarRecibo_Generar_Click(sender As Object, e As EventArgs) Handles ButtonPagarRecibo_Generar.Click
+        Dim Referencia As New Random(CInt(Date.Now.Ticks And Integer.MaxValue))
+
+
+
+        Dim ValorFinal As String = System.Convert.ToString(Referencia.Next)
+
+        MessageBox.Show("Referencia creada con exito tu referencia es: " + ValorFinal, "¡Gracias!", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
     End Sub
 
@@ -72,7 +79,7 @@
             Me.Close()
         Else
 
-            MessageBox.Show("Datos incompletos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Datos incompletos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         End If
     End Sub

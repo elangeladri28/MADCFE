@@ -14,10 +14,23 @@
         Dim Check As Boolean = chbTarifas_Activo.Checked
         Dim Fecha As Date = dtpTarifas_Fecha.Value
 
-        Dim qry As New Tarifas_Querys()
-        qry.InsertRate(RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha, Globals.username)
-        dgvTarifas.DataSource = qry.SelectAllFromRates()
-        dgvTarifas.DataMember = "rates"
+
+        If txtTarifas_Nombre.Text <> "" And cbTarifas_Tipo.Text <> "" And txtTarifas_Base.Text And txtTarifas_Intermedia.Text And
+            txtTarifas_Excedente.Text <> "" Then
+
+            Dim qry As New Tarifas_Querys()
+            qry.InsertRate(RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha, Globals.username)
+            dgvTarifas.DataSource = qry.SelectAllFromRates()
+            dgvTarifas.DataMember = "rates"
+
+        Else
+            MessageBox.Show("Faltan Datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+
+
+
 
     End Sub
 
@@ -42,18 +55,38 @@
         Dim Check As Boolean = chbTarifas_Activo.Checked
         Dim Fecha As Date = dtpTarifas_Fecha.Value
 
-        Dim qry As New Tarifas_Querys()
-        qry.UpdateRate(id, RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha, Globals.username)
-        dgvTarifas.DataSource = qry.SelectAllFromRates()
-        dgvTarifas.DataMember = "rates"
+        If txtTarifas_Nombre.Text <> "" And cbTarifas_Tipo.Text <> "" And txtTarifas_Base.Text And txtTarifas_Intermedia.Text And
+            txtTarifas_Excedente.Text <> "" Then
+
+            Dim qry As New Tarifas_Querys()
+            qry.UpdateRate(id, RateName, RateType, BaseRate, IntermediateRate, ExcedentRate, Check, Fecha, Globals.username)
+            dgvTarifas.DataSource = qry.SelectAllFromRates()
+            dgvTarifas.DataMember = "rates"
+
+        Else
+
+            MessageBox.Show("Faltan Datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+
+
     End Sub
 
     Private Sub btnTaifas_Eliminar_Click(sender As Object, e As EventArgs) Handles btnTaifas_Eliminar.Click
-        Dim id As String = lblTarifa_id.Text
-        Dim qry As New Tarifas_Querys()
-        qry.DeleteRate(id)
-        dgvTarifas.DataSource = qry.SelectAllFromRates()
-        dgvTarifas.DataMember = "rates"
+
+        Dim Respuesta As String = MessageBox.Show("¿Estas seguro de que quieres borrar a este usuario?", "¡CUIDADO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        If Respuesta = vbYes Then
+
+            Dim id As String = lblTarifa_id.Text
+            Dim qry As New Tarifas_Querys()
+            qry.DeleteRate(id)
+            dgvTarifas.DataSource = qry.SelectAllFromRates()
+            dgvTarifas.DataMember = "rates"
+
+        End If
+
     End Sub
 
     Private Sub txtTarifas_Nombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTarifas_Nombre.KeyPress

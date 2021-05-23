@@ -67,10 +67,21 @@
         Dim kwExcedente As String = txtConsumos_KwExcedentes.Text
         Dim fecha As String = dtpConsumos_Date.Value
 
-        Dim qry As New Consumption_Querys()
-        qry.InsertComsumption(Client, Regimen, electricityMeter, kwBase, kwInter, kwExcedente, fecha, Globals.username)
-        dgvConsumos_Consumos.DataSource = qry.SelectAllConsumptions()
-        dgvConsumos_Consumos.DataMember = "comsumption"
+        If txtboxConsumos_Regimen.Text <> "" And txtConsumos_Medidor.Text <> "" And txtConsumos_KwBase.Text <> "" And
+            txtConsumos_KwIntermedio.Text <> "" And txtConsumos_KwExcedentes.Text <> "" Then
+
+            Dim qry As New Consumption_Querys()
+            qry.InsertComsumption(Client, Regimen, electricityMeter, kwBase, kwInter, kwExcedente, fecha, Globals.username)
+            dgvConsumos_Consumos.DataSource = qry.SelectAllConsumptions()
+            dgvConsumos_Consumos.DataMember = "comsumption"
+
+        Else
+
+            MessageBox.Show("Faltan Datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End If
+
+
 
     End Sub
 End Class

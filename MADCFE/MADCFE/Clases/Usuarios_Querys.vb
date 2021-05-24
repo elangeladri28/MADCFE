@@ -22,6 +22,65 @@ Public Class Usuarios_Querys
         End Try
     End Function
 
+    Public Function InicioCheto(username As String, password As String, Tipo As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "EXEC InicioSesion '" + username + "','" + password + "','" + Tipo + "';"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+    Public Function InicioSinPassword(username As String, Tipo As String)
+
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+
+            Dim query As String = "EXEC InicioSinPassword '" + username + "','" + Tipo + "';"
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+    End Function
+
+    Public Function BloqueoUsuario(username As String, Tipo As String)
+        Try
+            Dim conn As New SQL_Connection()
+            conn.ConnectSQL()
+            Dim var() As String = {username, Tipo}
+            Dim query As String = String.Format("EXEC BloqueoUsuario '{0}', '{1}';", var)
+            Dim sqlCom As New SqlCommand(query, conn.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "users")
+            conn.DisconnectSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+    End Function
+
+
     Public Function InsertUsuario(username As String, userPassword As String, userType As String, fullname As String, curp As String, rfc As String, birthday As Date, gender As String, user As String)
         Try
             Dim conn As New SQL_Connection()
@@ -142,6 +201,11 @@ SELECT userPassword FROM rememberMe WHERE idUser = @id;"
             MessageBox.Show(errorsito, "Pos no wachas nada!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Function
+
+
+
+
+
 
     Public Function IniciarSesion(username As String, password As String)
         Try

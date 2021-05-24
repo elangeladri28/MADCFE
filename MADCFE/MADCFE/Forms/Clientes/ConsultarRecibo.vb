@@ -37,4 +37,11 @@
     Private Sub ButtonConsultarRecibos_Descargar_Click(sender As Object, e As EventArgs) Handles ButtonConsultarRecibos_Descargar.Click
 
     End Sub
+
+    Private Sub ButtonConsultarRecibos_Salir_Click(sender As Object, e As EventArgs) Handles ButtonConsultarRecibos_Salir.Click
+        Dim Regresar As New InicioSesion()
+        Me.Hide()
+        Regresar.ShowDialog()
+        Me.Close()
+    End Sub
 End Class
